@@ -1,0 +1,819 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CH8 · xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xinwuyun">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch9.md" />
+    
+    
+    <link rel="prev" href="ch7.md" />
+    
+
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml" />
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    CH1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    CH2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    CH3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    CH4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    CH5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="ch6.md">
+            
+                <span>
+            
+                    
+                    CH6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="ch7.md">
+            
+                <span>
+            
+                    
+                    CH7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    CH8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="ch9.md">
+            
+                <span>
+            
+                    
+                    CH9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="ch10.md">
+            
+                <span>
+            
+                    
+                    CH10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="ch12.md">
+            
+                <span>
+            
+                    
+                    CH11
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="ch12.md">
+            
+                <span>
+            
+                    
+                    CH12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="ch13.md">
+            
+                <span>
+            
+                    
+                    CH13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="ch14.html">
+            
+                <a href="ch14.html">
+            
+                    
+                    CH14
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="CH15.html">
+            
+                <a href="CH15.html">
+            
+                    
+                    CH15 并发控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CH8</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#ch8"><b>1.1. </b>CH8</a></li><li><span class="title-icon "></span><a href="#&#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;features-of-good-relational-design"><b>1.2. </b>&#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;Features of Good Relational Design</a></li><ul><li><span class="title-icon "></span><a href="#&#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;"><b>1.2.1. </b>&#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1nf"><b>1.3. </b>&#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1NF</a></li><ul><li><span class="title-icon "></span><a href="#goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;"><b>1.3.1. </b>goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;</a></li></ul><li><span class="title-icon "></span><a href="#functional-dependency-theory"><b>1.4. </b>Functional Dependency Theory</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB;-key"><b>1.4.1. </b>&#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB; key</a></li><li><span class="title-icon "></span><a href="#we-use-funcional-dependencies-to"><b>1.4.2. </b>we use funcional dependencies to</a></li><li><span class="title-icon "></span><a href="#&#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;"><b>1.4.3. </b>&#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;</a></li></ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305;-closure-of-a-set-of-functional-dependencies"><b>1.5. </b>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305; closure of a set of functional dependencies</a></li><li><span class="title-icon "></span><a href="#bcnf&#x8303;&#x5F0F;"><b>1.6. </b>BCNF&#x8303;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;bcnf"><b>1.7. </b>&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;BCNF</a></li><li><span class="title-icon "></span><a href="#bcnf&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;-dependency-preservation"><b>1.8. </b>BCNF&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559; Dependency Preservation</a></li><li><span class="title-icon "></span><a href="#3nf&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;"><b>1.9. </b>3NF&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x89C4;&#x8303;&#x5316;&#x7684;goal"><b>1.10. </b>&#x89C4;&#x8303;&#x5316;&#x7684;goal</a></li></ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;"><b>2. </b>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;</a></li><ul><li><span class="title-icon "></span><a href="#closure-of-a-set-of-functional-dependencies"><b>2.1. </b>closure of a set of functional dependencies</a></li><li><span class="title-icon "></span><a href="#&#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;"><b>2.2. </b>&#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7528;&#x9014;"><b>2.2.1. </b>&#x7528;&#x9014;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6B63;&#x5219;&#x8986;&#x76D6;-canonical-cover"><b>2.3. </b>&#x6B63;&#x5219;&#x8986;&#x76D6; canonical cover</a></li><ul><li><span class="title-icon "></span><a href="#&#x65E0;&#x5173;&#x5C5E;&#x6027;-extraneous-attributes"><b>2.3.1. </b>&#x65E0;&#x5173;&#x5C5E;&#x6027; extraneous attributes</a></li><li><span class="title-icon "></span><a href="#&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;"><b>2.3.2. </b>&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6B63;&#x5219;&#x8986;&#x76D6;canoncial-cover"><b>2.3.3. </b>&#x6B63;&#x5219;&#x8986;&#x76D6;canoncial cover</a></li><li><span class="title-icon "></span><a href="#&#x7B97;&#x6CD5;"><b>2.3.4. </b>&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x65E0;&#x635F;&#x5206;&#x89E3;-lossless-decomposition"><b>2.3.5. </b>&#x65E0;&#x635F;&#x5206;&#x89E3; lossless decomposition</a></li><li><span class="title-icon "></span><a href="#&#x4FDD;&#x6301;&#x4F9D;&#x8D56;-dependency-perservation"><b>2.3.6. </b>&#x4FDD;&#x6301;&#x4F9D;&#x8D56; dependency perservation</a></li></ul><li><span class="title-icon "></span><a href="#&#x5224;&#x65AD;bcnf"><b>2.4. </b>&#x5224;&#x65AD;BCNF</a></li><li><span class="title-icon "></span><a href="#bcnf&#x5206;&#x89E3;"><b>2.5. </b>BCNF&#x5206;&#x89E3;</a></li><li><span class="title-icon "></span><a href="#3nf&#x5206;&#x89E3;"><b>2.6. </b>3NF&#x5206;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x89E3;&#x51B3;&#x65B9;&#x6CD5;"><b>2.6.1. </b>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#design-goals"><b>2.7. </b>design goals</a></li><ul><li><span class="title-icon "></span><a href="#&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;"><b>2.7.1. </b>&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;"><b>2.7.2. </b>&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="ch8"><a name="ch8" class="anchor-navigation-ex-anchor" href="#ch8"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. CH8</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/28/0cb9b3aa7cdc5751d1b34526c2544b10-image-20220228225942821-3acad1.png" alt="image-20220228225942821"></p>
+<h2 id="&#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;features-of-good-relational-design"><a name="&#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;features-of-good-relational-design" class="anchor-navigation-ex-anchor" href="#&#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;features-of-good-relational-design"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x597D;&#x7684;&#x8BBE;&#x8BA1;&#x7684;&#x7279;&#x70B9;Features of Good Relational Design</h2>
+<ul>
+<li><p>A combined schema without <strong>repetion</strong></p>
+<p>&#x6CA1;&#x6709;<strong>&#x91CD;&#x590D;</strong>&#x7684;&#x7EC4;&#x5408;&#x6A21;&#x5F0F;</p>
+</li>
+</ul>
+<h3 id="&#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;"><a name="&#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x66F4;&#x5C0F;&#x7684;&#x6A21;&#x5F0F;</h3>
+<ul>
+<li>&#x5BF9;&#x4E8E;<strong>inst_dept</strong>&#x3002;decompose it into instructor and department</li>
+<li>dept_name&#x662F;&#x5019;&#x9009;&#x7801;</li>
+<li>&#x8868;&#x793A;&#x4E3A;<strong>&#x51FD;&#x6570;&#x4F9D;&#x8D56;</strong><ul>
+<li>dept_name &#x2192; building, budget</li>
+</ul>
+</li>
+<li>&#x5728;inst_dept&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;dept_name&#x4E0D;&#x662F;&#x5019;&#x9009;&#x7801;&#xFF0C;building&#x548C;budget&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x91CD;&#x590D;</li>
+<li>&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5206;&#x89E3;&#x90FD;&#x662F;&#x597D;&#x7684;<ul>
+<li><strong>lossy decomposition&#x6709;&#x635F;&#x5206;&#x89E3;</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/28/04699b1277ed2bb341d35c8052bdb2c3-image-20220228235117666-06cc25.png" alt="image-20220228235117666"></p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x540C;&#x540D;&#x7684;kim&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x5206;&#x8FA8;</p>
+</blockquote>
+<ul>
+<li>lossless decomposition &#x65E0;&#x635F;&#x5206;&#x89E3;</li>
+</ul>
+<h2 id="&#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1nf"><a name="&#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1nf" class="anchor-navigation-ex-anchor" href="#&#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1nf"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x269B;&#x539F;&#x5B50;&#x57DF;&#x548C;&#x7B2C;&#x4E00;&#x8303;&#x5F0F;1NF</h2>
+<ul>
+<li><p>domain is atomic if its elements are considered to be indivisible units</p>
+<p>&#x5982;&#x679C;&#x57DF;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x662F;&#x4E0D;&#x53EF;&#x5206;&#x5272;&#x7684;&#x79F0;&#x57DF;&#x4E3A;&#x539F;&#x5B50;&#x57DF;</p>
+</li>
+<li><p>&#x5982;&#x679C;R&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x57DF;&#x90FD;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF0C;&#x5219;&#x79F0;&#x8BE5;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x662F;<strong>&#x7B2C;&#x4E00;&#x8303;&#x5F0F;&#xFF08;first normal form, 1NF&#xFF09;</strong></p>
+</li>
+</ul>
+<h3 id="goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;"><a name="goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. goal&#x76EE;&#x7684;&#x2014;&#x2014;&#x4E3A;&#x4E0B;&#x5217;&#x5185;&#x5BB9;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;</h3>
+<ul>
+<li>&#x51B3;&#x5B9A;&#x5173;&#x7CFB;R&#x662F;&#x5426;&#x662F;&#x597D;&#x7684;&#x8303;&#x5F0F;</li>
+<li>&#x5F53;R&#x4E0D;&#x662F;good form&#x65F6;&#xFF0C;&#x628A;&#x5B83;&#x5206;&#x89E3;&#x6210;{$R_1, R_2, R_3...$}&#xFF0C;&#x5176;&#x4E2D;<ul>
+<li>&#x6BCF;&#x4E2A;&#x5173;&#x7CFB;&#x90FD;&#x662F;good form</li>
+<li>&#x5206;&#x89E3;&#x5FC5;&#x987B;&#x662F;&#x65E0;&#x635F;&#x8FDE;&#x63A5;&#x5206;&#x89E3;</li>
+</ul>
+</li>
+<li>&#x7406;&#x8BBA;&#x57FA;&#x4E8E;<ul>
+<li><strong>&#x51FD;&#x6570;&#x4F9D;&#x8D56;</strong></li>
+<li><strong>&#x591A;&#x503C;&#x4F9D;&#x8D56;</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="functional-dependency-theory"><a name="functional-dependency-theory" class="anchor-navigation-ex-anchor" href="#functional-dependency-theory"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Functional Dependency Theory</h2>
+<ul>
+<li>&#x5408;&#x6CD5;&#x5173;&#x7CFB;&#x96C6;&#x7684;&#x7EA6;&#x675F;</li>
+<li>&#x8981;&#x6C42;&#x5173;&#x7CFB;&#x4E2D;&#x6709;&#x5019;&#x9009;&#x7801;</li>
+<li>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x662F;<strong>key</strong>&#x7684;&#x6CDB;&#x5316;</li>
+</ul>
+<p>R&#x662F;&#x4E2A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F; Relation Schema</p>
+<p>$$
+\alpha \subseteq R \text { and } \beta \subseteq R</p>
+<p>$$
+<img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/01/e78b6b2158b71654f2785575c645d3cd-image-20220301210358212-ed241c.png" alt="image-20220301210358212"></p>
+<h3 id="&#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB;-key"><a name="&#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB;-key" class="anchor-navigation-ex-anchor" href="#&#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB;-key"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x4E0E;&#x7801;&#x7684;&#x5173;&#x7CFB; key</h3>
+<p>&#x5F53;$K\rarr R$&#x65F6;&#xFF0C;$K$&#x662F;<strong>&#x8D85;&#x7801;</strong>&#x3002;</p>
+<p>&#x5F53;$K\rarr R$&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5B58;&#x5728;$\alpha \subset K, \alpha \rightarrow R$</p>
+<blockquote>
+<p>&#x4E0D;&#x5B58;&#x5728;K&#x7684;&#x5B50;&#x96C6;&#xFF0C;&#x4F7F;&#x5F97;&#x51FD;&#x6570;&#x4F9D;&#x8D56;$\alpha \rarr R$&#x6210;&#x7ACB;</p>
+</blockquote>
+<ul>
+<li><p>Function Dependencies&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8868;&#x8FBE;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x8D85;&#x7801;&#x8868;&#x8FBE;&#x7684;&#x7EA6;&#x675F;</p>
+</li>
+<li><p>&#x8003;&#x8651;&#x5982;&#x4E0B;&#x6A21;&#x5F0F;</p>
+<p>inst_dept(<u>ID</u>, name, salary, <u>dept_name</u>, building, budget)</p>
+<p>&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x8868;&#x793A;</p>
+<p>$dept_name\rarr building \text{   } and \text{ } ID\rarr building$</p>
+</li>
+</ul>
+<h3 id="we-use-funcional-dependencies-to"><a name="we-use-funcional-dependencies-to" class="anchor-navigation-ex-anchor" href="#we-use-funcional-dependencies-to"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. we use funcional dependencies to</h3>
+<ul>
+<li>&#x5B9E;&#x4F8B;&#xFF1A;&#x5224;&#x5B9A;&#x5173;&#x7CFB;&#x7684;&#x5B9E;&#x4F8B;&#x662F;&#x5426;<strong>satisfies</strong>&#x7ED9;&#x5B9A;<strong>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F</strong><ul>
+<li><strong>satisfies&#xFF1A;</strong>&#x6A21;&#x5F0F;r&#x6EE1;&#x8DB3;<strong>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F</strong></li>
+</ul>
+</li>
+<li>&#x6A21;&#x5F0F;&#xFF1A;&#x8BF4;&#x660E;&#x5408;&#x6CD5;&#x5173;&#x7CFB;&#x96C6;&#x4E0A;&#x7684;&#x7EA6;&#x675F;&#x3002;&#x5982;&#x679C;&#x6A21;&#x5F0F;R&#x4E0A;&#x6EE1;&#x8DB3;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x5219;F&#x5728;r(R)&#x4E0A;&#x6210;&#x7ACB;</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x7684;<strong>&#x5B9E;&#x4F8B;</strong>&#x53EF;&#x80FD;satisfy&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x5373;&#x4F7F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x5728;&#x6A21;&#x5F0F;&#x4E0A;&#x5E76;&#x4E0D;&#x6210;&#x7ACB;&#x3002;</p>
+</blockquote>
+<h3 id="&#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;"><a name="&#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;" class="anchor-navigation-ex-anchor" href="#&#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. &#x5E73;&#x51E1;trivial&#x51FD;&#x6570;&#x4F9D;&#x8D56;</h3>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x5728;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x4E0A;&#x90FD;&#x6210;&#x7ACB;&#xFF0C;&#x5219;&#x5B83;&#x662F;&#x5E73;&#x51E1;&#x7684;</p>
+<p>$$
+ID, name \rarr ID
+\
+name \rarr name</p>
+<p>$$
+<img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220302142334785.png" alt="image-20220302142334785"></p>
+<h2 id="&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305;-closure-of-a-set-of-functional-dependencies"><a name="&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305;-closure-of-a-set-of-functional-dependencies" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305;-closure-of-a-set-of-functional-dependencies"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x95ED;&#x5305; closure of a set of functional dependencies</h2>
+<ul>
+<li>&#x7ED9;&#x5B9A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#xFF0C;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x51FA;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E5F;&#x6210;&#x7ACB;<ul>
+<li>&#x4F8B;&#x5982; $if \; A \rarr B \; and \; B \rarr C$</li>
+<li>&#x53EF;&#x4EE5;&#x63A8;&#x51FA;$A \rarr C$</li>
+</ul>
+</li>
+<li>&#x80FD;&#x591F;&#x4ECE;&#x7ED9;&#x5B9A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#x63A8;&#x5BFC;&#x51FA;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x662F;F&#x7684;<strong>&#x95ED;&#x5305;&#xFF08;closure&#xFF09;</strong></li>
+<li>&#x5199;&#x4F5C;$F^+$</li>
+<li>$F^+$&#x662F;F&#x7684;&#x8D85;&#x96C6;</li>
+</ul>
+<h2 id="bcnf&#x8303;&#x5F0F;"><a name="bcnf&#x8303;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#bcnf&#x8303;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. BCNF&#x8303;&#x5F0F;</h2>
+<ul>
+<li>&#x6D88;&#x9664;&#x6240;&#x6709;&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x80FD;&#x591F;&#x53D1;&#x73B0;&#x7684;<strong>&#x5197;&#x4F59;</strong></li>
+<li>&#x5177;&#x6709;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#x7684;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;R&#x5C5E;&#x4E8E;BCNF&#x7684;&#x6761;&#x4EF6;&#x662F;&#xFF0C;&#x5BF9;$F^+$&#x4E2D;&#x6240;&#x6709;&#x51FD;&#x6570;&#x4F9D;&#x8D56;$\alpha \rarr \beta$&#xFF0C;&#x4E0B;&#x5217;&#x81F3;&#x5C11;&#x4E00;&#x9879;&#x6210;&#x7ACB;<ul>
+<li>&#x662F;&#x5E73;&#x51E1;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;</li>
+<li>&#x6216;&#x8005;$\alpha$&#x662F;&#x8D85;&#x7801;</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x6570;&#x636E;&#x5E93;&#x5C5E;&#x4E8E;BCNF&#x7684;&#x6761;&#x4EF6;&#x662F;&#xFF0C;&#x6784;&#x6210;&#x8BE5;&#x8BBE;&#x8BA1;&#x7684;&#x6240;&#x6709;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x90FD;&#x5C5E;&#x4E8E;BCNF</p>
+</blockquote>
+<h2 id="&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;bcnf"><a name="&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;bcnf" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;bcnf"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x5206;&#x89E3;&#x4E3A;BCNF</h2>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;<strong>&#x5173;&#x7CFB;&#x6A21;&#x5F0F;R</strong>&#x548C;<strong>&#x975E;&#x5E73;&#x51E1;&#x51FD;&#x6570;&#x4F9D;&#x8D56;</strong>&#xFF0C;&#x4E0D;&#x6EE1;&#x8DB3;BCNF</p>
+<p>decompose it into</p>
+<ul>
+<li>$(\alpha \cup \beta)$</li>
+<li>$R-(\beta - \alpha)$</li>
+</ul>
+<h2 id="bcnf&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;-dependency-preservation"><a name="bcnf&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;-dependency-preservation" class="anchor-navigation-ex-anchor" href="#bcnf&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;-dependency-preservation"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. BCNF&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559; Dependency Preservation</h2>
+<p>&#x4F9D;&#x8D56;&#x4FDD;&#x7559;&#xFF0C;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8FDB;&#x884C;BCNF&#x5206;&#x89E3;&#x540E;&#xFF0C;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4ECD;&#x7136;&#x4FDD;&#x7559;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5F80;&#x5F80;BCNF&#x548C;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;&#x4E0D;&#x80FD;&#x4E24;&#x5168;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x63D0;&#x51FA;<strong>3NF</strong>&#xFF0C;&#x5B83;&#x6BD4;BCNF&#x66F4;&#x5F31;&#x3002;</p>
+<h2 id="3nf&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;"><a name="3nf&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#3nf&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 3NF&#xFF0C;&#x7B2C;&#x4E09;&#x8303;&#x5F0F;</h2>
+<p>BCNF&#x57FA;&#x7840;&#x4E0A;&#x518D;&#x52A0;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;</p>
+<ul>
+<li>$\alpha \rarr \beta$&#x662F;&#x4E00;&#x4E2A;&#x5E73;&#x51E1;trivial&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;</li>
+<li>$\alpha$&#x662F;R&#x7684;&#x4E00;&#x4E2A;&#x8D85;&#x7801;</li>
+<li>$\beta - \alpha$&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x5305;&#x542B;&#x4E8E;R&#x7684;&#x4E00;&#x4E2A;&#x5019;&#x9009;&#x7801;&#x4E2D;</li>
+</ul>
+<blockquote>
+<p>&#x5982;&#x679C;R&#x6EE1;&#x8DB3;BCNF&#x5219;&#xFF0C;R&#x6EE1;&#x8DB3;3NF</p>
+<p>&#x80FD;&#x786E;&#x4FDD;&#x6BCF;&#x4E2A;&#x6A21;&#x5F0F;&#x90FD;&#x6709;&#x4FDD;&#x6301;&#x4F9D;&#x8D56;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7684;3NF&#x5206;&#x89E3;</p>
+</blockquote>
+<h2 id="&#x89C4;&#x8303;&#x5316;&#x7684;goal"><a name="&#x89C4;&#x8303;&#x5316;&#x7684;goal" class="anchor-navigation-ex-anchor" href="#&#x89C4;&#x8303;&#x5316;&#x7684;goal"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x89C4;&#x8303;&#x5316;&#x7684;goal</h2>
+<h1 id="&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;"><a name="&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7406;&#x8BBA;</h1>
+<h2 id="closure-of-a-set-of-functional-dependencies"><a name="closure-of-a-set-of-functional-dependencies" class="anchor-navigation-ex-anchor" href="#closure-of-a-set-of-functional-dependencies"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. closure of a set of functional dependencies</h2>
+<p>&#x903B;&#x8F91;&#x8574;&#x542B;</p>
+<p>&#x7ED9;&#x5B9A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;r(R)&#xFF0C;&#x5982;&#x679C;r(R)&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;F&#x7684;&#x5B9E;&#x4F8B;&#x4E5F;&#x6EE1;&#x8DB3;f&#xFF0C;&#x5219;R&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;f&#x88AB;r&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#x903B;&#x8F91;&#x8574;&#x542B;</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;F&#x7684;&#x95ED;&#x5305;&#x662F;$F^+$</li>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x590D;&#x4F7F;&#x7528;<ul>
+<li><strong>reflexivity&#x81EA;&#x53CD;&#x5F8B;</strong>if $\beta \subseteq\alpha$&#x5219;$\alpha \rarr \beta $</li>
+<li><strong>augmentation&#x589E;&#x5E7F;&#x5F8B;&#xFF1A;</strong>&#x5982;&#x679C;$\alpha \rarr \beta$&#xFF0C;&#x5219;$\gamma \alpha\rarr\gamma\beta$</li>
+<li><strong>transitivity&#x4F20;&#x9012;&#x5F8B;&#xFF1A;</strong>&#x5982;&#x679C;$\alpha \rarr \beta$&#x5E76;&#x4E14;$\beta\rarr\gamma$&#x5219;$\alpha\rarr\gamma$</li>
+<li><strong>union&#x5408;&#x5E76;&#x5F8B;</strong>&#xFF1A;&#x5982;&#x679C;$\alpha \rarr \beta$&#x5E76;&#x4E14;$\alpha \rarr \gamma$&#xFF0C;&#x5219;$\alpha \rarr \beta \gamma$</li>
+<li><strong>decomposition&#x5206;&#x89E3;&#x7387;</strong>&#xFF1A;union&#x9006;&#x547D;&#x9898;</li>
+<li><strong>pseudotransitivity&#x4F2A;&#x4F20;&#x9012;&#x5F8B;&#xFF1A;</strong>&#x5982;&#x679C;$\alpha \rarr \beta$&#x5E76;&#x4E14;$\gamma \beta \rarr \delta$&#x5219;$\alpha \gamma \rarr \delta$</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;"><a name="&#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x5C5E;&#x6027;&#x96C6;&#x7684;&#x95ED;&#x5305;</h2>
+<p>&#x5982;&#x679C;$\alpha \rarr B$&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x5C5E;&#x6027;B&#x88AB;$\alpha$<strong>&#x51FD;&#x6570;&#x786E;&#x5B9A;&#xFF08;functionally determine)</strong>&#x3002;</p>
+<p>&#x8981;&#x5224;&#x65AD;&#x96C6;&#x5408;$\alpha$&#x662F;&#x5426;&#x662F;&#x8D85;&#x7801;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x88AB;$\alpha$&#x51FD;&#x6570;&#x786E;&#x5B9A;&#x7684;&#x5C5E;&#x6027;&#x96C6;&#x3002;</p>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303160148047.png" alt="image-20220303160148047"></p>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303155431239.png" alt="image-20220303155431239"></p>
+<ol>
+<li>&#x5148;&#x5224;&#x65AD;&#x662F;&#x4E0D;&#x662F;&#x8D85;&#x7801;</li>
+<li>&#x518D;&#x5224;&#x65AD;&#x662F;&#x4E0D;&#x662F;&#x5019;&#x9009;&#x7801;</li>
+</ol>
+<h3 id="&#x7528;&#x9014;"><a name="&#x7528;&#x9014;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x9014;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. &#x7528;&#x9014;</h3>
+<ol>
+<li>&#x5224;&#x65AD;&#x8D85;&#x7801;&#xFF1A;&#x5148;&#x6C42;$\alpha^+$&#xFF0C;&#x770B;&#x770B;&#x662F;&#x5426;&#x5305;&#x542B;R&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;</li>
+<li>&#x5224;&#x65AD;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x662F;&#x5426;holds<ol>
+<li>&#x5BF9;&#x4E8E;$\alpha \rarr \beta$&#xFF0C;check $\alpha^+$&#x4E2D;&#x662F;&#x5426;&#x6709;$\beta$&#x5373;&#x53EF;</li>
+</ol>
+</li>
+<li>&#x53E6;&#x4E00;&#x79CD;&#x8BA1;&#x7B97;$F^+$&#x7684;&#x65B9;&#x6CD5;&#xFF0C;<strong>&#x5BF9;&#x4EFB;&#x610F;$\gamma \subseteq R$&#x627E;&#x51FA;$\gamma^+$&#xFF0C;&#x5BF9;&#x4EFB;&#x610F;$S\subseteq \gamma^+$&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;$\gamma \rarr S$</strong></li>
+</ol>
+<h2 id="&#x6B63;&#x5219;&#x8986;&#x76D6;-canonical-cover"><a name="&#x6B63;&#x5219;&#x8986;&#x76D6;-canonical-cover" class="anchor-navigation-ex-anchor" href="#&#x6B63;&#x5219;&#x8986;&#x76D6;-canonical-cover"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x6B63;&#x5219;&#x8986;&#x76D6; canonical cover</h2>
+<h3 id="&#x65E0;&#x5173;&#x5C5E;&#x6027;-extraneous-attributes"><a name="&#x65E0;&#x5173;&#x5C5E;&#x6027;-extraneous-attributes" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x5173;&#x5C5E;&#x6027;-extraneous-attributes"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. &#x65E0;&#x5173;&#x5C5E;&#x6027; extraneous attributes</h3>
+<ul>
+<li>&#x8003;&#x8651;$\alpha \rarr \beta$ in F<ul>
+<li>&#x5982;&#x679C;$A \in \alpha$&#xFF0C;&#x5E76;&#x4E14;F<strong>&#x903B;&#x8F91;&#x8574;&#x542B;</strong>$(F-{\alpha \rightarrow \beta}) \cup{(\alpha-A) \rightarrow \beta}$</li>
+<li>&#x5982;&#x679C;$A\in\beta$&#xFF0C;&#x5E76;&#x4E14;<strong>F&#x903B;&#x8F91;&#x8574;&#x542B;$(F-{\alpha \rightarrow \beta}) \cup{\alpha \rightarrow (\beta-A)}$</strong></li>
+<li>&#x5219;A&#x662F;&#x65E0;&#x5173;&#x7684;</li>
+</ul>
+</li>
+</ul>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303164059801.png" alt="image-20220303164059801"></p>
+<h3 id="&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;"><a name="&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2. &#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x65E0;&#x5173;extraneous&#xFF08;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#xFF09;</h3>
+<p>&#x5BF9;&#x4E8E;F&#x4E2D;&#x7684;$\alpha\rarr\beta$&#x662F;&#x5426;&#x5B58;&#x5728;&#x65E0;&#x5173;&#x5C5E;&#x6027;</p>
+<ul>
+<li>$A\in\alpha$<ul>
+<li>&#x8BA1;&#x7B97;$({\alpha}-A)^+$&#xFF0C;&#x4F7F;&#x7528;<strong><em>F</em></strong></li>
+<li>&#x5224;&#x65AD;&#x5176;&#x662F;&#x5426;&#x5305;&#x542B;$\beta$&#xFF0C;&#x6709;&#x5219;A&#x662F;&#x65E0;&#x5173;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+<li>$A\in \beta$<ul>
+<li>&#x8BA1;&#x7B97;$\alpha^+$&#xFF0C;&#x4F7F;&#x7528;$\mathrm{F}^{\prime}=(F-{\alpha \rightarrow \beta}) \cup{\alpha \rightarrow(\beta-A)}$</li>
+<li>&#x5224;&#x65AD;&#x5176;&#x662F;&#x5426;&#x5305;&#x542B;A&#xFF0C;&#x4E0D;&#x5305;&#x542B;&#x5219;A&#x662F;&#x65E0;&#x5173;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6B63;&#x5219;&#x8986;&#x76D6;canoncial-cover"><a name="&#x6B63;&#x5219;&#x8986;&#x76D6;canoncial-cover" class="anchor-navigation-ex-anchor" href="#&#x6B63;&#x5219;&#x8986;&#x76D6;canoncial-cover"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.3. &#x6B63;&#x5219;&#x8986;&#x76D6;canoncial cover</h3>
+<p><strong>$F_c$&#x662F;F&#x7684;&#x6B63;&#x5219;&#x8986;&#x76D6;</strong>&#xFF0C;&#x5F53;</p>
+<ol>
+<li>F&#x903B;&#x8F91;&#x8574;&#x542B;Fc</li>
+<li>Fc&#x903B;&#x8F91;&#x8574;&#x542B;F</li>
+<li>Fc&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E0D;&#x5305;&#x542B;&#x65E0;&#x5173;&#x5C5E;&#x6027;</li>
+<li>Fc&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7684;&#x5DE6;&#x8FB9;&#x90FD;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;</li>
+</ol>
+<h3 id="&#x7B97;&#x6CD5;"><a name="&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.4. &#x7B97;&#x6CD5;</h3>
+<ol>
+<li>&#x9002;&#x7528;<strong>union rule</strong>&#x5408;&#x5E76;dependency</li>
+<li>&#x5BF9;&#x5269;&#x4E0B;&#x7684;&#x53BB;&#x9664;<strong>&#x65E0;&#x5173;&#x5C5E;&#x6027;</strong></li>
+</ol>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303170800599.png" alt="image-20220303170800599"></p>
+<blockquote>
+<p>&#x7B97;&#x6CD5;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x53EF;&#x80FD;union rule&#x9700;&#x8981;&#x518D;&#x6B21;&#x9002;&#x7528;&#x3002;</p>
+</blockquote>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303185532492.png" alt="image-20220303185532492"></p>
+<h3 id="&#x65E0;&#x635F;&#x5206;&#x89E3;-lossless-decomposition"><a name="&#x65E0;&#x635F;&#x5206;&#x89E3;-lossless-decomposition" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x635F;&#x5206;&#x89E3;-lossless-decomposition"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.5. &#x65E0;&#x635F;&#x5206;&#x89E3; lossless decomposition</h3>
+<h4 id="&#x7528;&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x8BF4;&#x660E;"><a name="&#x7528;&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x8BF4;&#x660E;</h4>
+<p>&#x5BF9;&#x4E8E;$R=(R_1, R_2)$&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x6C42;</p>
+<p>$$
+r=\prod<em>{R 1}(r) \bowtie \prod</em>{R 2}(r)</p>
+<p>$$</p>
+<blockquote>
+<p>$R_1$&#x548C;$R_2$&#x662F;&#x5C5E;&#x6027;&#x96C6;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x5171;&#x540C;&#x7684;&#x5C5E;&#x6027;</p>
+<p>$\bowtie$&#x662F;&#x81EA;&#x7136;&#x8FDE;&#x63A5;</p>
+</blockquote>
+<p>&#x8FD9;&#x6837;&#x4EE4;R1&#x548C;R2&#x662F;R&#x7684;&#x5206;&#x89E3;&#xFF0C;&#x6CA1;&#x6709;&#x4FE1;&#x606F;&#x635F;&#x5931;&#xFF0C;&#x8BE5;&#x5206;&#x89E3;&#x662F;&#x65E0;&#x635F;&#x5206;&#x89E3;</p>
+<h4 id="&#x7528;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x8BF4;&#x660E;"><a name="&#x7528;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x8BF4;&#x660E;</h4>
+<p>&#x5982;&#x679C;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5C5E;&#x4E8E;$F^+$&#xFF0C;&#x5219;&#x662F;&#x65E0;&#x635F;&#x5206;&#x89E3;</p>
+<p>$$
+R_1 \cap R_2 \rarr R_1
+\
+R_1 \cap R_2 \rarr R_2</p>
+<p>$$</p>
+<blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x5206;&#x89E3;&#x540E;&#x4E00;&#x65B9;&#x542B;&#x6709;&#x53E6;&#x4E00;&#x65B9;&#x7684;&#x8D85;&#x7801;</p>
+<p>&#x8D85;&#x7801;&#x53EF;&#x4EE5;&#x7528;<strong>&#x5C5E;&#x6027;&#x96C6;&#x95ED;&#x5305;&#x5224;&#x65AD;</strong></p>
+</blockquote>
+<h4 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>example</h4>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303205507758.png" alt="image-20220303205507758"></p>
+<h3 id="&#x4FDD;&#x6301;&#x4F9D;&#x8D56;-dependency-perservation"><a name="&#x4FDD;&#x6301;&#x4F9D;&#x8D56;-dependency-perservation" class="anchor-navigation-ex-anchor" href="#&#x4FDD;&#x6301;&#x4F9D;&#x8D56;-dependency-perservation"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.6. &#x4FDD;&#x6301;&#x4F9D;&#x8D56; dependency perservation</h3>
+<p>n&#x4E2A;R&#xFF0C;$R_i$&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x96C6;&#x662F;$F_i$&#xFF0C;&#x5982;&#x679C;</p>
+<p>$$
+\left(F<em>{1} \cup F</em>{2} \cup \ldots \cup F_{\mathrm{n}}\right)^{+}=F^{+}</p>
+<p>$$
+&#x5219;&#x5206;&#x89E3;&#x662F;&#x4F9D;&#x8D56;&#x4FDD;&#x7559;&#x7684;</p>
+<h4 id="&#x7B97;&#x6CD5;_1"><a name="&#x7B97;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x7B97;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B97;&#x6CD5;</h4>
+<p>&#x5206;&#x522B;&#x5BF9;F&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7B97;&#x6CD5;</p>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303210239523.png" alt="image-20220303210239523"></p>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x5C5E;&#x6027;&#x95ED;&#x5305;&#x662F;F&#x4E0B;&#x7684;</p>
+</blockquote>
+<h4 id="example_1"><a name="example_1" class="anchor-navigation-ex-anchor" href="#example_1"><i class="fa fa-link" aria-hidden="true"></i></a>example</h4>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303210324132.png" alt="image-20220303210324132"></p>
+<h2 id="&#x5224;&#x65AD;bcnf"><a name="&#x5224;&#x65AD;bcnf" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;bcnf"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x5224;&#x65AD;BCNF</h2>
+<p><img src="../Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/&#x7B14;&#x8BB0;/&#x5927;&#x4E09;&#x4E0A;/&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;/&#x590D;&#x4E60;/CH8.assets/image-20220303223742377.png" alt="image-20220303223742377"></p>
+<h2 id="bcnf&#x5206;&#x89E3;"><a name="bcnf&#x5206;&#x89E3;" class="anchor-navigation-ex-anchor" href="#bcnf&#x5206;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. BCNF&#x5206;&#x89E3;</h2>
+<h2 id="3nf&#x5206;&#x89E3;"><a name="3nf&#x5206;&#x89E3;" class="anchor-navigation-ex-anchor" href="#3nf&#x5206;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. 3NF&#x5206;&#x89E3;</h2>
+<ul>
+<li>BCNF&#x4E0D;&#x662F;&#x4F9D;&#x8D56;&#x4FDD;&#x6301;&#x7684;</li>
+<li>&#x68C0;&#x6D4B;&#x8FDD;&#x53CD;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x7684;&#x6548;&#x7387;&#x5F88;&#x91CD;&#x8981;</li>
+</ul>
+<h3 id="&#x89E3;&#x51B3;&#x65B9;&#x6CD5;"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6.1. &#x89E3;&#x51B3;&#x65B9;&#x6CD5;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x66F4;&#x5F31;&#x7684;&#x8303;&#x5F0F;</p>
+<ol>
+<li>&#x5141;&#x8BB8;&#x4E00;&#x5B9A;&#x5197;&#x4F59;</li>
+<li>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x53EF;&#x4EE5;&#x5728;&#x5355;&#x72EC;&#x7684;&#x5173;&#x7CFB;&#x4E2D;&#x68C0;&#x9A8C;&#x4E0D;&#x7528;&#x8BA1;&#x7B97;&#x8FDE;&#x63A5;</li>
+</ol>
+<h2 id="design-goals"><a name="design-goals" class="anchor-navigation-ex-anchor" href="#design-goals"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. design goals</h2>
+<h3 id="&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;"><a name="&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>2.7.1. &#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li>BCNF</li>
+<li>&#x65E0;&#x635F;&#x5206;&#x89E3; lossless join</li>
+<li>dependency preservation</li>
+</ul>
+<h3 id="&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;"><a name="&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;"><i class="fa fa-link" aria-hidden="true"></i></a>2.7.2. &#x5982;&#x679C;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x5982;&#x4E0B;&#x4E4B;&#x4E00;</h3>
+<ol>
+<li>&#x7F3A;&#x5C11;&#x51FD;&#x6570;&#x4F9D;&#x8D56;</li>
+<li>3NF</li>
+</ol>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch7.md" class="navigation navigation-prev " aria-label="Previous page: CH7">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch9.md" class="navigation navigation-next " aria-label="Next page: CH9">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CH8","level":"2.8","depth":1,"next":{"title":"CH9","level":"2.9","depth":1,"path":"database/ch9.md","ref":"database/ch9.md","articles":[]},"previous":{"title":"CH7","level":"2.7","depth":1,"path":"database/ch7.md","ref":"database/ch7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.xinwuyun.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"xinwuyun.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"xinwuyun.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"xinwuyun.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"UA-140787039-2"},"xinwuyun.gitbook.io":{"token":"UA-140787039-1"},"xinwuyun.github.io":{"token":"UA-140787039-2"},"xinwuyun.gitee.io":{"token":"UA-140787039-3"},"xinwuyun.gitlab.io":{"token":"UA-140787039-4"},"xinwuyun.tech":{"token":"UA-140787039-5"},"blog.xinwuyun.cn":{"token":"UA-140787039-6"}},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master","xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master","xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"database/ch8.md","mtime":"2022-03-07T09:03:32.596Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T09:17:27.875Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-google-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,876 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CH5 · xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xinwuyun">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch6.md" />
+    
+    
+    <link rel="prev" href="ch4.html" />
+    
+
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml" />
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    CH1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    CH2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    CH3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    CH4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    CH5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="ch6.md">
+            
+                <span>
+            
+                    
+                    CH6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="ch7.md">
+            
+                <span>
+            
+                    
+                    CH7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    CH8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="ch9.md">
+            
+                <span>
+            
+                    
+                    CH9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="ch10.md">
+            
+                <span>
+            
+                    
+                    CH10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="ch12.md">
+            
+                <span>
+            
+                    
+                    CH11
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="ch12.md">
+            
+                <span>
+            
+                    
+                    CH12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="ch13.md">
+            
+                <span>
+            
+                    
+                    CH13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="ch14.html">
+            
+                <a href="ch14.html">
+            
+                    
+                    CH14
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="CH15.html">
+            
+                <a href="CH15.html">
+            
+                    
+                    CH15 并发控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CH5</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x4E94;&#x7AE0;-&#x9AD8;&#x7EA7;sql"><b>1. </b>&#x7B2C;&#x4E94;&#x7AE0; &#x9AD8;&#x7EA7;SQL</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;"><b>1.1. </b>&#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;sql"><b>1.1.1. </b>&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;SQL</a></li></ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B;-functions-and-procedural-constructs"><b>1.2. </b>&#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B; Functions and Procedural Constructs</a></li><ul><li><span class="title-icon "></span><a href="#&#x8FC7;&#x7A0B;-procedure"><b>1.2.1. </b>&#x8FC7;&#x7A0B; Procedure</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;-function"><b>1.2.2. </b>&#x51FD;&#x6570; Function</a></li><li><span class="title-icon "></span><a href="#&#x5185;&#x5BB9;&#x7EC4;&#x6210;"><b>1.2.3. </b>&#x5185;&#x5BB9;&#x7EC4;&#x6210;</a></li><li><span class="title-icon "></span><a href="#declare-statement"><b>1.2.4. </b>declare statement</a></li><li><span class="title-icon "></span><a href="#&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;"><b>1.2.5. </b>&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;</a></li><li><span class="title-icon "></span><a href="#iterate"><b>1.2.6. </b>ITERATE</a></li><li><span class="title-icon "></span><a href="#leave"><b>1.2.7. </b>LEAVE</a></li><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.2.8. </b>&#x4F8B;&#x5B50;</a></li><li><span class="title-icon "></span><a href="#while"><b>1.2.9. </b>while</a></li><li><span class="title-icon "></span><a href="#repeat"><b>1.2.10. </b>repeat</a></li><li><span class="title-icon "></span><a href="#cursor&#x6E38;&#x6807;"><b>1.2.11. </b>cursor&#x6E38;&#x6807;</a></li></ul><li><span class="title-icon "></span><a href="#condition-handling"><b>1.3. </b>Condition handling</a></li><ul><li><span class="title-icon "></span><a href="#declare-condition"><b>1.3.1. </b>declare condition</a></li><li><span class="title-icon "></span><a href="#declare-handler"><b>1.3.2. </b>declare handler</a></li></ul><li><span class="title-icon "></span><a href="#triggers"><b>1.4. </b>triggers</a></li><ul><li><span class="title-icon "></span><a href="#event"><b>1.4.1. </b>event</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;"><b>1.4.2. </b>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;</a></li></ul></ul></ul></div><a href="#&#x7B2C;&#x4E94;&#x7AE0;-&#x9AD8;&#x7EA7;sql" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x4E94;&#x7AE0;-&#x9AD8;&#x7EA7;sql"><a name="&#x7B2C;&#x4E94;&#x7AE0;-&#x9AD8;&#x7EA7;sql" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x4E94;&#x7AE0;-&#x9AD8;&#x7EA7;sql"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7B2C;&#x4E94;&#x7AE0; &#x9AD8;&#x7EA7;SQL</h1>
+<p><strong>&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x70B9;</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/25/e1d5c0974001a60fdf0a84c41ee20cbf-image-20220225161620179-818bba.png" alt="image-20220225161620179"></p>
+<h2 id="&#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;"><a name="&#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4F7F;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;</h2>
+<ul>
+<li>&#x5982;&#x4F55;&#x5141;&#x8BB8;&#x6570;&#x636E;&#x5E93;&#x4E0E;&#x666E;&#x901A;&#x7A0B;&#x5E8F;&#x4EA4;&#x4E92;&#xFF0C;C&#x8FD8;&#x662F;JAVA</li>
+<li>&#x5982;&#x4F55;&#x5904;&#x7406;SQL&#x548C;C&#x3001;JAVA&#x4E2D;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;</li>
+<li>&#x5982;&#x4F55;&#x5904;&#x7406;&#x88AB;&#x5F88;&#x591A;&#x77ED;&#x65F6;&#x8FDB;&#x7A0B;&#x5171;&#x4EAB;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;</li>
+</ul>
+<h3 id="&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;sql"><a name="&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;sql" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;sql"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x7F16;&#x7A0B;SQL</h3>
+<ul>
+<li>embedded sql</li>
+<li>API<ul>
+<li>ODBC</li>
+<li>JDBC</li>
+</ul>
+</li>
+<li>procedure SQL</li>
+</ul>
+<h2 id="&#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B;-functions-and-procedural-constructs"><a name="&#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B;-functions-and-procedural-constructs" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B;-functions-and-procedural-constructs"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x51FD;&#x6570;&#x548C;&#x8FC7;&#x7A0B; Functions and Procedural Constructs</h2>
+<h3 id="&#x8FC7;&#x7A0B;-procedure"><a name="&#x8FC7;&#x7A0B;-procedure" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x7A0B;-procedure"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x8FC7;&#x7A0B; Procedure</h3>
+<p>&#x4F7F;&#x7528;<code>create procedure</code>&#x521B;&#x5EFA;&#xFF0C;&#x4F7F;&#x7528;<code>call</code>&#x8BED;&#x53E5;&#x8C03;&#x7528;</p>
+<p>procedure&#x6CA1;&#x6709;<strong>&#x8FD4;&#x56DE;&#x503C;</strong>&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x53C2;&#x6570;&#x4F9B;&#x8C03;&#x7528;&#x8005;&#x7A0D;&#x540E;&#x68C0;&#x67E5;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x7ED3;&#x679C;&#x96C6;&#x3002;</p>
+<h4 id="&#x53C2;&#x6570;"><a name="&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;</h4>
+<pre><code class="lang-sql">proc_parameter: [IN|OUT|INOUT] param_name type
+</code></pre>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x662F;IN&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x53C2;&#x6570;&#x540D;&#x524D;&#x9762;&#x6307;&#x5B9A;IN OUT</li>
+<li>&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#xFF08;IN|OUT|INOUT&#xFF09;&#x53EA;&#x5BF9;PROCEDURE&#x6709;&#x6548;</li>
+<li>&#x5BF9;&#x4E8E;FUNCTION&#xFF0C;&#x53C2;&#x6570;&#x90FD;&#x662F;IN&#xFF0C;&#x8FC7;&#x7A0B;&#x4E2D;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x6539;&#x53D8;&#x8FD9;&#x4E9B;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x4FEE;&#x6539;&#x4E0D;&#x4F1A;&#x5BF9;&#x8C03;&#x7528;&#x8005;&#x4EA7;&#x751F;&#x5F71;&#x54CD;</li>
+<li>OUT&#x53C2;&#x6570;&#x4F1A;&#x5C06;&#x503C;&#x4F20;&#x9001;&#x5230;&#x8C03;&#x7528;&#x8005;</li>
+<li>INOUT&#x53C2;&#x6570;&#x7531;&#x8C03;&#x7528;&#x8005;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4F20;&#x9001;&#x4E00;&#x4E2A;&#x503C;&#x5230;procedure&#x518D;&#x8FD4;&#x56DE;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x5BF9;&#x53C2;&#x6570;&#x7684;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x5BF9;&#x8C03;&#x7528;&#x8005;&#x90FD;&#x4F1A;&#x751F;&#x6548;&#x3002;</li>
+<li><code>delimiter</code>&#x547D;&#x4EE4;&#xFF0C;&#x8BBE;&#x5B9A;&#x5206;&#x9694;&#x7B26;&#x3002;<ul>
+<li><code>delimiter //</code>&#x8868;&#x793A;&#x4E4B;&#x540E;&#x5982;&#x679C;&#x4E00;&#x884C;&#x547D;&#x4EE4;&#x4EE5;<code>//</code>&#x7ED3;&#x675F;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x6267;&#x884C;</li>
+<li><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/26/44bf32b877222d6e4f99ba500d165082-image-20220226204748761-a165e2.png" alt="image-20220226204748761"></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x51FD;&#x6570;-function"><a name="&#x51FD;&#x6570;-function" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;-function"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x51FD;&#x6570; Function</h3>
+<p>&#x4F7F;&#x7528;<code>create function</code>&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x7C7B;&#x4F3C;&#x5185;&#x7F6E;&#x51FD;&#x6570;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8C03;&#x7528;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9662;&#x5185;&#x6559;&#x5E08;&#x4EBA;&#x6570;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">function</span> dept_count(dept_name <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>))
+    <span class="hljs-keyword">returns</span> <span class="hljs-built_in">integer</span>
+    <span class="hljs-keyword">begin</span>
+    declear d_count <span class="hljs-built_in">integer</span>;
+        <span class="hljs-keyword">select</span> <span class="hljs-keyword">count</span>(*) <span class="hljs-keyword">into</span> d_count
+        <span class="hljs-keyword">from</span> instructor
+        <span class="hljs-keyword">where</span> instructor.dept_name=dept_name
+    <span class="hljs-keyword">return</span> d_count;
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<h3 id="&#x5185;&#x5BB9;&#x7EC4;&#x6210;"><a name="&#x5185;&#x5BB9;&#x7EC4;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x5BB9;&#x7EC4;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x5185;&#x5BB9;&#x7EC4;&#x6210;</h3>
+<ul>
+<li><p>&#x590D;&#x5408;&#x8BED;&#x53E5;&#xFF1A;begin...end</p>
+<ul>
+<li>&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x4E2A;SQL&#x8BED;&#x53E5;</li>
+</ul>
+</li>
+<li><p><strong>returns</strong>&#x2014;&#x2014;&#x6307;&#x51FA;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;</p>
+</li>
+<li><p><strong>return</strong>&#x2014;&#x2014;&#x6307;&#x51FA;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x7ED3;&#x679C;</p>
+</li>
+<li><p>SOL &#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x6CDB;&#x5316;&#x7684;<strong>&#x53C2;&#x6570;&#x5316;&#x89C6;&#x56FE;</strong></p>
+</li>
+<li><pre><code class="lang-sql"><span class="hljs-keyword">BEGIN</span>
+    [statement_list]
+<span class="hljs-keyword">END</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>dept_count</strong>function&#x4E5F;&#x53EF;&#x4EE5;procudure&#x4EE3;&#x66FF;&#x3002;</p>
+<h3 id="declare-statement"><a name="declare-statement" class="anchor-navigation-ex-anchor" href="#declare-statement"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. declare statement</h3>
+<ul>
+<li>local variables</li>
+<li>conditions and handlers</li>
+<li>cursors</li>
+</ul>
+<pre><code class="lang-sql"><span class="hljs-keyword">declare</span> var_name [, var_name] ... <span class="hljs-keyword">type</span>[<span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">value</span>]
+<span class="hljs-keyword">set</span> <span class="hljs-keyword">variable</span> = expr [, <span class="hljs-keyword">variable</span>=expr]...
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">procedure</span> <span class="hljs-keyword">sql</span> (x <span class="hljs-built_in">varchar</span>(<span class="hljs-number">5</span>))
+<span class="hljs-keyword">begin</span>
+    declear xname <span class="hljs-built_in">varchar</span>(<span class="hljs-number">5</span>) <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;bob&apos;</span>;
+    declear newname varchar(5);
+    declear xid INT;
+    <span class="hljs-keyword">select</span> xname, <span class="hljs-keyword">id</span> <span class="hljs-keyword">INTO</span> newname, xid
+    <span class="hljs-keyword">from</span> table1 <span class="hljs-keyword">where</span> xname = xname;
+    <span class="hljs-keyword">select</span> newname;
+<span class="hljs-keyword">end</span>;
+</code></pre>
+<h3 id="&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;"><a name="&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. &#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;</h3>
+<ul>
+<li>IF</li>
+<li>CASE</li>
+<li>LOOP<ul>
+<li>ITERATE</li>
+<li>LEAVE LOOP</li>
+</ul>
+</li>
+<li>WHILE</li>
+<li>REPEAT</li>
+<li>RETURN</li>
+</ul>
+<h4 id="if"><a name="if" class="anchor-navigation-ex-anchor" href="#if"><i class="fa fa-link" aria-hidden="true"></i></a>if</h4>
+<pre><code class="lang-sql">create funtion xxxx (n INT, m, INT)
+    returns varchar(50)
+    begin
+        declare s varchar(50);
+        if n=m then set s = &apos;equal&apos;;
+        else
+            if n&gt;m then set s = &apos;greate&apos;;
+            else set s=&apos;less&apos;;
+            end if;
+        end if;
+        set s=concat(n, &apos; &apos;, s, &apos; &apos;, m, &apos;.&apos;);
+        return s;
+    end//
+delimiter ;
+</code></pre>
+<h4 id="case&#x8BED;&#x53E5;"><a name="case&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#case&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>case&#x8BED;&#x53E5;</h4>
+<pre><code class="lang-sql">case case_value
+    when when_value then statement_list
+    [when when_value then statement_list]
+    [else statement_list]
+<span class="hljs-keyword">end</span> <span class="hljs-keyword">case</span>
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-sql">case
+    when search_condition then statement_list
+    [when search_condition then statement_list]
+    [else statement_list]
+<span class="hljs-keyword">end</span> <span class="hljs-keyword">case</span>
+</code></pre>
+<pre><code class="lang-sql">delimiter |
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">procedure</span> p()
+    <span class="hljs-keyword">begin</span>
+        <span class="hljs-keyword">declare</span> v <span class="hljs-built_in">int</span> <span class="hljs-keyword">default</span> <span class="hljs-number">1</span>;
+        case v
+            when 2 then <span class="hljs-keyword">select</span> v;
+            when 3 then <span class="hljs-keyword">select</span> <span class="hljs-number">0</span>;
+            else
+                <span class="hljs-keyword">begin</span>
+                <span class="hljs-keyword">end</span>;
+        <span class="hljs-keyword">end</span> <span class="hljs-keyword">case</span>;
+|
+delimiter ;
+</code></pre>
+<h4 id="loop"><a name="loop" class="anchor-navigation-ex-anchor" href="#loop"><i class="fa fa-link" aria-hidden="true"></i></a>LOOP</h4>
+<pre><code class="lang-sql">LOOP
+    statement_list
+<span class="hljs-keyword">END</span> <span class="hljs-keyword">LOOP</span>
+</code></pre>
+<h3 id="iterate"><a name="iterate" class="anchor-navigation-ex-anchor" href="#iterate"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. ITERATE</h3>
+<p>&#x53EA;&#x80FD;&#x5728;LOOP REPEAT&#x548C;WHILE statements&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x8868;&#x793A;&quot;Start the loop again&quot;</p>
+<h3 id="leave"><a name="leave" class="anchor-navigation-ex-anchor" href="#leave"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. LEAVE</h3>
+<p>&#x79BB;&#x5F00;&#x5FAA;&#x73AF;&#x3002;</p>
+<h3 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="anchor-navigation-ex-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.8. &#x4F8B;&#x5B50;</h3>
+<pre><code class="lang-sql">create procedure doiterate(p1 INT)
+BEGIN
+    l1: loop
+        set p1 = p1 + 1;
+        if p1 &lt; 10 then
+            iterate l1;
+        end if;
+        leave l1;
+    end loop l1;
+    set @x = p1;
+END;
+</code></pre>
+<h3 id="while"><a name="while" class="anchor-navigation-ex-anchor" href="#while"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.9. while</h3>
+<pre><code class="lang-sql">[begin_label]while search_condition <span class="hljs-keyword">do</span>
+    statement_list
+<span class="hljs-keyword">end</span> <span class="hljs-keyword">while</span> end_label
+</code></pre>
+<pre><code class="lang-sql">create procedure dowhile()
+begin
+    declare v1 int default 5;
+    l1: while v1 &gt; 0 do
+        ...
+        set v1 = v1 - 1;
+    end while l1; 
+end
+</code></pre>
+<h3 id="repeat"><a name="repeat" class="anchor-navigation-ex-anchor" href="#repeat"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.10. repeat</h3>
+<pre><code class="lang-sql">create procedure dorepeat(p1 INT)
+begin
+    set @x = 0;
+    l1: repeat
+        set @x = @x + 1;
+    until @x &gt; p1 end repeat l1;
+end;
+</code></pre>
+<h3 id="cursor&#x6E38;&#x6807;"><a name="cursor&#x6E38;&#x6807;" class="anchor-navigation-ex-anchor" href="#cursor&#x6E38;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.11. cursor&#x6E38;&#x6807;</h3>
+<p>mysql&#x652F;&#x6301;&#x5728;&#x5B58;&#x50A8;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x6E38;&#x6807;&#xFF0C;&#x53EA;&#x80FD;&#x5355;&#x5411;&#x904D;&#x5386;</p>
+<pre><code class="lang-sql">create procedure curdemo()
+begin
+    declare done int default false;
+    declare a char(6);
+    declare b, c int;
+    declare cur1 cursor for select id, data from test.t1;
+    declare cur2 cursor for select i from test.t2;
+    declare continue handler for NOT FOUND SET done = truel
+
+    open cur1;
+    open cur2;
+
+    read_loop: LOOP
+        fetch cur1 into a, b;
+        fetch cur2 into c;
+        if done then
+            leave read_loop;
+        end if;
+        if b &lt; c then
+            insert into test.t3 values(a,b);
+        else
+            insert into test.t3 values(a,c);
+        end if;
+
+    end loop;
+    close cur1;
+    close cur2;
+end;
+</code></pre>
+<pre><code class="lang-sql">create procedure curdemo()
+begin
+    declare dont int default false;
+    declare a char(16);                            -- &#x4E8B;&#x5148;&#x58F0;&#x660E;
+    declare b, c int;
+    declare cur1 cursor for select id, data from test.t1;
+    declare cur2 cursor for select i from test.t2;
+    declare continue handler for not found set done = true;
+
+    open cur1;
+    open cur2;
+
+    read_loop: loop
+        fetch cur1 into a, b;
+        fetch cur2 into c;
+        if done then
+            leave read_loop;
+        end if;
+        if b &lt; c then
+            insert into test.t3 values(a,b);
+        else
+            insert into test.t3 values(a, c);
+        end if;
+    end loop read_loop;
+end
+</code></pre>
+<h2 id="condition-handling"><a name="condition-handling" class="anchor-navigation-ex-anchor" href="#condition-handling"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Condition handling</h2>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;handlers&#xFF0C;&#x6765;&#x5E94;&#x5BF9;&#x8BF8;&#x5982;warning&#x3001;exceptions&#x6216;&#x8005;&#x7279;&#x6B8A;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x7279;&#x5B9A;&#x9519;&#x8BEF;&#x7801;</li>
+<li>&#x53EF;&#x4EE5;&#x7ED9;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x8BBE;&#x5B9A;&#x540D;&#x5B57;&#x5E76;&#x5728;handlers&#x4E2D;&#x5F15;&#x7528;</li>
+</ul>
+<pre><code class="lang-sql"><span class="hljs-keyword">declare</span> .. condition <span class="hljs-keyword">statement</span>
+<span class="hljs-keyword">declare</span> .. <span class="hljs-keyword">handler</span> <span class="hljs-keyword">statement</span>
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">declare</span> condition_name condition <span class="hljs-keyword">for</span> condition_value
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">declare</span> continue <span class="hljs-keyword">handler</span> <span class="hljs-keyword">for</span> <span class="hljs-number">1051</span>
+<span class="hljs-keyword">begin</span>
+    <span class="hljs-comment">-- body of handler</span>
+<span class="hljs-keyword">end</span>;
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x58F0;&#x660E;&#x6761;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#xFF0C;handler&#x7684;&#x76EE;&#x7684;&#x662F;&#x66F4;&#x5BB9;&#x6613;&#x770B;&#x5230;</p>
+<h3 id="declare-condition"><a name="declare-condition" class="anchor-navigation-ex-anchor" href="#declare-condition"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. declare condition</h3>
+<pre><code class="lang-sql"><span class="hljs-keyword">declare</span> no_such_table condition <span class="hljs-keyword">for</span> <span class="hljs-number">1051</span>;
+<span class="hljs-keyword">declare</span> continue <span class="hljs-keyword">handler</span> <span class="hljs-keyword">for</span> no_such_table;
+<span class="hljs-keyword">begin</span>
+<span class="hljs-comment">-- body of handler</span>
+<span class="hljs-keyword">end</span>;
+</code></pre>
+<h3 id="declare-handler"><a name="declare-handler" class="anchor-navigation-ex-anchor" href="#declare-handler"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. declare handler</h3>
+<pre><code class="lang-sql"><span class="hljs-keyword">DECLARE</span> handler_action <span class="hljs-keyword">HANDLER</span>
+    <span class="hljs-keyword">FOR</span> condition_value [, condition_value] ...
+    <span class="hljs-keyword">statement</span>
+
+handler_action: {
+    CONTINUE
+  | <span class="hljs-keyword">EXIT</span>
+  | <span class="hljs-keyword">UNDO</span>
+}
+
+condition_value: {
+    mysql_error_code
+  | <span class="hljs-keyword">SQLSTATE</span> [<span class="hljs-keyword">VALUE</span>] sqlstate_value
+  | condition_name
+  | SQLWARNING
+  | <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">FOUND</span>
+  | SQLEXCEPTION
+}
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">procedure</span> handlerdemo()
+<span class="hljs-keyword">begin</span>
+    <span class="hljs-keyword">declare</span> continue <span class="hljs-keyword">handler</span> <span class="hljs-keyword">for</span> <span class="hljs-keyword">sqlstate</span> <span class="hljs-string">&apos;23000&apos;</span> <span class="hljs-keyword">set</span> @x2 = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">set</span> @x = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> <span class="hljs-keyword">test</span>.t <span class="hljs-keyword">values</span>(<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">set</span> @x = <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> <span class="hljs-keyword">test</span>.t <span class="hljs-keyword">values</span>(<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">set</span> @x = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">end</span>
+</code></pre>
+<h2 id="triggers"><a name="triggers" class="anchor-navigation-ex-anchor" href="#triggers"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. triggers</h2>
+<h3 id="event"><a name="event" class="anchor-navigation-ex-anchor" href="#event"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. event</h3>
+<ul>
+<li>insert</li>
+<li>delete</li>
+<li>update</li>
+</ul>
+<pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">trigger</span> <span class="hljs-keyword">trigger</span>-<span class="hljs-keyword">name</span>
+    <span class="hljs-keyword">trigger</span>-<span class="hljs-keyword">time</span> <span class="hljs-keyword">trigger</span>-<span class="hljs-keyword">event</span>
+    <span class="hljs-keyword">on</span> <span class="hljs-keyword">table</span>-<span class="hljs-keyword">name</span>
+    <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> <span class="hljs-keyword">row</span>
+        <span class="hljs-keyword">trigger</span>-<span class="hljs-keyword">action</span>
+</code></pre>
+<ul>
+<li>trigger-time$\in${<code>BEFORE, AFTER</code>}</li>
+<li>trigger-event$\in${<code>INSERT, DELETE, UPDATE</code>}</li>
+<li>&#x4E24;&#x4E2A;&#x503C;<ul>
+<li>old row&#xFF1A;for deletes and updates</li>
+<li>new row&#xFF1A;for inserts and updates</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;"><a name="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x96C7;&#x4F63;&#x65B0;&#x7684;&#x96C7;&#x5458;&#x65F6;&#x66F4;&#x65B0;deparment&#x7684;&#x603B;&#x6536;&#x5165;</h3>
+<pre><code class="lang-sql">delimiter |
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">trigger</span> udpate_salary
+<span class="hljs-keyword">after</span> <span class="hljs-keyword">insert</span> <span class="hljs-keyword">on</span> employee
+<span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> <span class="hljs-keyword">row</span>
+<span class="hljs-keyword">begin</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">new</span>.dno <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">then</span>
+        <span class="hljs-keyword">update</span> deptsal
+        <span class="hljs-keyword">set</span> totalsalary = totalsalary + <span class="hljs-keyword">new</span>.salary
+        <span class="hljs-keyword">where</span> dnumber = <span class="hljs-keyword">new</span>.dno;
+<span class="hljs-keyword">end</span>
+|
+delimiter ;
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/27/10314565859062b3ffb831ce6ac3f9e1-image-20220227235749602-1dff31.png" alt="image-20220227235749602"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/02/28/48c9167f216a706c34e1160fe1c7ba6e-image-20220228000146444-317e28.png" alt="image-20220228000146444"></p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch4.html" class="navigation navigation-prev " aria-label="Previous page: CH4">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch6.md" class="navigation navigation-next " aria-label="Next page: CH6">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CH5","level":"2.5","depth":1,"next":{"title":"CH6","level":"2.6","depth":1,"path":"database/ch6.md","ref":"database/ch6.md","articles":[]},"previous":{"title":"CH4","level":"2.4","depth":1,"path":"database/ch4.md","ref":"database/ch4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.xinwuyun.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"xinwuyun.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"xinwuyun.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"xinwuyun.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"UA-140787039-2"},"xinwuyun.gitbook.io":{"token":"UA-140787039-1"},"xinwuyun.github.io":{"token":"UA-140787039-2"},"xinwuyun.gitee.io":{"token":"UA-140787039-3"},"xinwuyun.gitlab.io":{"token":"UA-140787039-4"},"xinwuyun.tech":{"token":"UA-140787039-5"},"blog.xinwuyun.cn":{"token":"UA-140787039-6"}},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master","xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master","xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"database/ch5.md","mtime":"2022-02-27T16:01:49.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T09:17:27.875Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-google-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

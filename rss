@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 07 Mar 2022 07:44:07 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Mar 2022 09:17:32 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -19,6 +19,55 @@
             <title><![CDATA[xinwuyun的笔记]]></title>
             <link>https://xinwuyun.github.io/</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第一章]]></title>
+            <description><![CDATA[image-20220222173209786]]></description>
+            <link>https://xinwuyun.github.io/database/ch1.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch1.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第二章 关系模型]]></title>
+            <description><![CDATA[[toc]]]></description>
+            <link>https://xinwuyun.github.io/database/ch2.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch2.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第三章 SQL]]></title>
+            <description><![CDATA[image-20220224161604197]]></description>
+            <link>https://xinwuyun.github.io/database/ch3.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch3.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH4]]></title>
+            <description><![CDATA[image-20220225013618406]]></description>
+            <link>https://xinwuyun.github.io/database/ch4.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch4.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第五章 高级SQL]]></title>
+            <description><![CDATA[有两个重点]]></description>
+            <link>https://xinwuyun.github.io/database/ch5.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch5.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[函数依赖理论]]></title>
+            <description><![CDATA[image-20220228225942821]]></description>
+            <link>https://xinwuyun.github.io/database/ch8.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch8.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[数据库第十四章]]></title>
+            <description><![CDATA[image-20220305211721066]]></description>
+            <link>https://xinwuyun.github.io/database/ch14.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch14.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>

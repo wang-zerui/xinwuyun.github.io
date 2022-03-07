@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# pull latest 
-git pull
-
 # remove cache dir
-
+rm -rf _book
 # generate docs 
 gitbook build
 
@@ -15,9 +12,12 @@ cp -rf _book/* .
 cd _book
 rm package.json
 
+git init
 git add .
 git commit -m "auto deploy"
-git push -u origin main
+git remote add origin git@github.com:xinwuyun/xinwuyun.github.io-scf.git
+git branch -M main
+git push --force origin main
 
 cd ..
 # add commits
