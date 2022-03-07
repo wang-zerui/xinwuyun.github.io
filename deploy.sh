@@ -4,7 +4,6 @@
 git pull
 
 # remove cache dir
-rm -rf _book/
 
 # generate docs 
 gitbook build
@@ -12,6 +11,15 @@ gitbook build
 # copy to docs
 cp -rf _book/* .
 
+# upload to https://github.com/xinwuyun/xinwuyun.github.io-scf
+cd _book
+rm package.json
+
+git add .
+git commit -m "auto deploy"
+git push -u origin main
+
+cd ..
 # add commits
 git add .
 
