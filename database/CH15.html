@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CH15 并发控制 · xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xinwuyun">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml" />
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库笔记</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="CH15.html">
+            
+                <a href="CH15.html">
+            
+                    
+                    CH15 并发控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CH15 并发控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><b>1. </b>&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</a></li><ul><li><span class="title-icon "></span><a href="#lock-based-protocol"><b>1.1. </b>Lock-based protocol</a></li><ul><li><span class="title-icon "></span><a href="#lock"><b>1.1.1. </b>lock</a></li><li><span class="title-icon "></span><a href="#&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility"><b>1.1.2. </b>&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635; lock-compatibility</a></li><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.1.3. </b>&#x4F8B;&#x5B50;</a></li></ul><li><span class="title-icon "></span><a href="#&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks"><b>1.2. </b>&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;Automatic Acquisition of Locks</a></li><ul><li><span class="title-icon "></span><a href="#readd"><b>1.2.1. </b>read(D)</a></li><li><span class="title-icon "></span><a href="#writed"><b>1.2.2. </b>write(D)</a></li></ul><li><span class="title-icon "></span><a href="#the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;"><b>1.3. </b>The two-phase lockign protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#deadlocks"><b>1.4. </b>Deadlocks</a></li><ul><li><span class="title-icon "></span><a href="#&#x9965;&#x997F;"><b>1.4.1. </b>&#x9965;&#x997F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9501;&#x7684;&#x5B9E;&#x73B0;"><b>1.5. </b>&#x9501;&#x7684;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x5904;&#x7406;"><b>1.6. </b>&#x6B7B;&#x9501;&#x5904;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b>1.6.1. </b>&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention"><b>1.6.2. </b>&#x6B7B;&#x9501;&#x9884;&#x9632; deadlock prevention</a></li></ul></ul></ul></div><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><a name="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/e761876d62c542d1149ed51728c3c5b1-e761876d62c542d1149ed51728c3c5b1-image-20220306185053559-664953-20220307103922453-31db42.png" alt="image-20220306185053559"></p>
+<h2 id="lock-based-protocol"><a name="lock-based-protocol" class="anchor-navigation-ex-anchor" href="#lock-based-protocol"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Lock-based protocol</h2>
+<h3 id="lock"><a name="lock" class="anchor-navigation-ex-anchor" href="#lock"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. lock</h3>
+<p>&#x9501;&#x662F;&#x4E00;&#x79CD;&#x63A7;&#x5236;&#x5BF9;<strong>&#x6570;&#x636E;&#x9879;</strong>&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x7684;&#x673A;&#x5236;</p>
+<p><strong>&#x6570;&#x636E;&#x9879;</strong>&#x53EF;&#x4EE5;&#x5728;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#x88AB;&#x9501;</p>
+<ol>
+<li><strong>&#x6392;&#x4ED6;&#x7684;exclusive(</strong>X)mode&#xFF1A;&#x5982;&#x679C;&#x4E8B;&#x52A1;T&#x83B7;&#x5F97;&#x4E86;&#x6570;&#x636E;&#x9879;Q&#x4E0A;&#x7684;&#x6392;&#x5B83;&#x9501;&#xFF0C;&#x53EF;&#x4EE5;&#x8BFB;&#x5199;</li>
+<li><strong>&#x5171;&#x4EAB;&#x7684;shared</strong>&#xFF1A;&#x5982;&#x679C;&#x4E8B;&#x52A1;T&#x83B7;&#x5F97;&#x4E86;&#x6570;&#x636E;&#x9879;Q&#x4E0A;&#x7684;&#x5171;&#x4EAB;&#x9501;&#xFF0C;&#x5219;T&#x53EF;&#x8BFB;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x5199;</li>
+</ol>
+<p>&#x7A0B;&#x5E8F;&#x733F;&#x5411;<strong>&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x7BA1;&#x7406;&#x5668;concurrency-control manager</strong>&#x53D1;&#x51FA;&#x9501;&#x8BF7;&#x6C42;&#x3002;&#x4E8B;&#x52A1;&#x53EA;&#x6709;&#x5728;&#x8BF7;&#x6C42;&#x5F97;&#x5230;&#x6388;&#x6743;&#x540E;&#x624D;&#x80FD;&#x7EE7;&#x7EED;</p>
+<h3 id="&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility"><a name="&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility" class="anchor-navigation-ex-anchor" href="#&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635; lock-compatibility</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/06/321ca45e4e35bd47d054018121b9c97b-image-20220306191807720-6a6e65.png" alt="image-20220306191807720"></p>
+<ul>
+<li>A transaction may be granted a lock on an item if the requested lock is compatible with locks <strong>already held on the item</strong> by other transactions.</li>
+<li>&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x9879;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x4F7F;&#x7528;<strong>&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5171;&#x4EAB;&#x9501;</strong><ul>
+<li>&#x6B64;&#x540E;&#x7684;<strong>&#x6392;&#x5B83;&#x9501;&#x8BF7;&#x6C42;</strong>&#x5FC5;&#x987B;&#x4E00;&#x76F4;&#x7B49;&#x5230;<strong>&#x6240;&#x6709;&#x5171;&#x4EAB;&#x9501;&#x91CA;&#x653E;</strong></li>
+</ul>
+</li>
+<li>&#x5F53;&#x6709;X&#x9501;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x518D;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x4EFB;&#x4F55;&#x9501;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x6388;&#x4E88;&#x9501;&#xFF0C; &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x4E8B;&#x52A1;&#x5C31;&#x7B49;&#x5F85;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x4F7F;&#x7528;&#x7684;&#x4E0D;&#x76F8;&#x5BB9;&#x7684;&#x9501;&#x88AB;&#x91CA;&#x653E;&#x6389;&#xFF0C;&#x624D;&#x80FD;&#x6388;&#x4E88;&#x8BE5;&#x9501;</li>
+</ul>
+<h3 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="anchor-navigation-ex-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x4F8B;&#x5B50;</h3>
+<p>&#x5C55;&#x793A;A+B</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/1ab597b9bbf08247b4fb64c3702397d7-1ab597b9bbf08247b4fb64c3702397d7-image-20220306202603232-09e207-20220307103922764-f03acf.png" alt="image-20220306202603232"></p>
+<ul>
+<li>&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x4E0D;&#x8DB3;&#x4EE5;&#x4FDD;&#x8BC1;&#x53EF;&#x4E32;&#x884C;&#x5316;&#x3002;&#x5982;&#x679C;A&#x548C;B&#x5728;<code>ulock(A)</code>&#x548C;<code>lock-s(B)</code>&#x4E4B;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x5219;&#x5C55;&#x793A;&#x51FA;&#x7684;&#x548C;&#x4F1A;&#x4E0D;&#x6B63;&#x786E;</li>
+<li><strong>locking protocol</strong>&#x662F;&#x6240;&#x6709;&#x4E8B;&#x52A1;&#x5728;&#x8BF7;&#x6C42;&#x548C;&#x91CA;&#x653E;&#x9501;&#x65F6;&#x9075;&#x5B88;&#x7684;&#x89C4;&#x5219;&#x96C6;</li>
+<li><strong>locking protocol</strong>&#x9650;&#x5B9A;&#x4E86;&#x53EF;&#x80FD;&#x7684;&#x8C03;&#x5EA6;&#x96C6;</li>
+</ul>
+<h2 id="&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks"><a name="&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;Automatic Acquisition of Locks</h2>
+<ul>
+<li>&#x4E8B;&#x52A1;$T_i$&#x5904;&#x7406;&#x6807;&#x51C6; read/write&#x6307;&#x4EE4;&#x65F6;&#x65E0;&#x9700;&#x663E;&#x5F0F;&#x4F7F;&#x7528;&#x9501;&#x8C03;&#x7528;&#x6307;&#x4EE4;</li>
+</ul>
+<h3 id="readd"><a name="readd" class="anchor-navigation-ex-anchor" href="#readd"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. read(D)</h3>
+<pre><code>if Ti has a lock on D
+    then
+        read(D)
+    else begin
+        if necessary wait until no other transaction has a lock-X on D
+        // &#x8FD9;&#x91CC;&#x53EA;&#x9700;&#x8981;&#x786E;&#x5B9A;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x6CA1;&#x6709;X&#x9501;&#x5C31;&#x884C;&#xFF0C;&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x6709;
+    grant Ti a lock-S on D
+    read(D)
+   end
+</code></pre><h3 id="writed"><a name="writed" class="anchor-navigation-ex-anchor" href="#writed"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. write(D)</h3>
+<pre><code>if Ti has a lock-X on D
+    then
+        write(D)
+    else begin
+        if necessary wait until no other transaction has a lock on D
+        if Ti has a lock-S on D
+            then 
+                upgrade lock on D to lock-X
+            else
+                grant Ti a lock-X on D
+</code></pre><p><strong>&#x6240;&#x6709;&#x9501;&#x5728;commit&#x6216;abort&#x540E;&#x90FD;&#x91CA;&#x653E;</strong></p>
+<h2 id="the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;"><a name="the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. The two-phase lockign protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;</h2>
+<p><strong>&#x8FD9;&#x4E2A;&#x9501;&#x534F;&#x8BAE;&#x4FDD;&#x8BC1;&#x4E86;&#x51B2;&#x7A81;&#x53EF;&#x4E32;&#x884C;&#x8C03;&#x5EA6;</strong></p>
+<ol>
+<li>&#x589E;&#x957F;&#x9636;&#x6BB5; growing phase</li>
+<li>&#x7F29;&#x51CF;&#x9636;&#x6BB5; shrinking phase</li>
+</ol>
+<h2 id="deadlocks"><a name="deadlocks" class="anchor-navigation-ex-anchor" href="#deadlocks"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Deadlocks</h2>
+<p>&#x8003;&#x8651;&#x5982;&#x4E0B;&#x90E8;&#x5206;&#x8C03;&#x5EA6;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/08bbc5384606713fbc427ff2203dc6c6-08bbc5384606713fbc427ff2203dc6c6-image-20220306215450676-ada792-20220307103922919-657079.png" alt="image-20220306215450676"></p>
+<p>&#x4E0D;&#x96BE;&#x770B;&#x51FA;&#xFF0C;&#x6700;&#x540E;$T_3$&#x548C;$T_4$&#x90FD;&#x4E0D;&#x80FD;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E86;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8FDB;&#x884C;&#x4E0B;&#x53BB;&#xFF0C;$T_3$&#x548C;$T_4$&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5E94;&#x8BE5;&#x56DE;&#x6EDA;&#x4EE4;&#x5176;&#x9501;&#x91CA;&#x653E;</p>
+<ul>
+<li><strong>&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x65E0;&#x6B7B;&#x9501;</strong></li>
+</ul>
+<h3 id="&#x9965;&#x997F;"><a name="&#x9965;&#x997F;" class="anchor-navigation-ex-anchor" href="#&#x9965;&#x997F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x9965;&#x997F;</h3>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x67D0;&#x4E8B;&#x52A1;&#x53EF;&#x80FD;&#x5728;&#x7B49;&#x5F85;&#x67D0;X-lock&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x4E0D;&#x65AD;&#x88AB;&#x6388;&#x4E88;S-lock&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x52A1;&#x4E00;&#x76F4;&#x5F97;&#x4E0D;&#x5230;X-lock</p>
+<p>&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x7BA1;&#x7406;&#x5668;&#x53EF;&#x4EE5;designed to prevent starvation</p>
+<h3 id=""> </h3>
+<ul>
+<li>&#x5927;&#x591A;&#x6570;&#x5C01;&#x9501;&#x534F;&#x8BAE;&#x4E2D;&#x5B58;&#x5728;&#x6F5C;&#x5728;&#x6B7B;&#x9501;</li>
+<li>&#x5F53;&#x4E00;&#x4E2A;&#x6B7B;&#x9501;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x7EA7;&#x8054;&#x56DE;&#x6EDA;</li>
+<li>&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x7EA7;&#x8054;&#x56DE;&#x6EDA;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#xFF0C;&#x4F7F;&#x7528;<strong>strict two-phase locking</strong>&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#x5FC5;&#x987B;&#x6301;&#x6709;&#x6240;&#x6709;&#x7684;X-lock&#xFF0C;&#x76F4;&#x5230;commit/aborts</li>
+<li><strong>Rigorous two-phase locking</strong>&#xFF1A;&#x4E8B;&#x52A1;&#x7684;&#x6240;&#x6709;&#x9501;&#x90FD;&#x8981;&#x4E00;&#x76F4;&#x6301;&#x6709;&#xFF0C;&#x76F4;&#x5230;commit/abort</li>
+</ul>
+<h2 id="&#x9501;&#x7684;&#x5B9E;&#x73B0;"><a name="&#x9501;&#x7684;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x9501;&#x7684;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x9501;&#x7684;&#x5B9E;&#x73B0;</h2>
+<ul>
+<li><p>lock manager&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E3A;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x4ECE;&#x4E8B;&#x52A1;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x5E76;&#x53CD;&#x9988;&#x6D88;&#x606F;&#x3002;</p>
+</li>
+<li><p>&#x9488;&#x5BF9;&#x9501;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x8FD4;&#x56DE;</p>
+<ul>
+<li>&#x6388;&#x4E88;&#x9501;&#x6D88;&#x606F;</li>
+<li>&#x4E8B;&#x52A1;&#x56DE;&#x6EDA;&#x6D88;&#x606F;</li>
+</ul>
+</li>
+<li><p>lock manager&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;<strong>lock table</strong>&#x6765;&#x8BB0;&#x5F55;&#x88AB;&#x6388;&#x4E88;&#x7684;&#x9501;&#x548C;&#x5F85;&#x529E;&#x7684;&#x9501;</p>
+<ul>
+<li>&#x9501;&#x8868;&#x901A;&#x5E38;&#x5B9E;&#x73B0;&#x4E3A;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x54C8;&#x5E0C;&#x8868;&#xFF0C;&#x7D22;&#x5F15;&#x4EE5;&#x88AB;&#x4E0A;&#x9501;&#x7684;&#x6570;&#x636E;&#x9879;&#x7684;&#x540D;&#x5B57;&#x4F5C;&#x4E3A;&#x7D22;&#x5F15;&#x9879;</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/3b310fcfc1014685b1c8e4600f6a9e11-3b310fcfc1014685b1c8e4600f6a9e11-image-20220306225418392-332eaf-20220307103923240-8dfb88.png" alt="image-20220306225418392"></p>
+</li>
+</ul>
+<h2 id="&#x6B7B;&#x9501;&#x5904;&#x7406;"><a name="&#x6B7B;&#x9501;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x6B7B;&#x9501;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x6B7B;&#x9501;&#x5904;&#x7406;</h2>
+<h3 id="&#x5B9A;&#x4E49;"><a name="&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x5B9A;&#x4E49;</h3>
+<p>&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#x96C6;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x4E8B;&#x52A1;&#x90FD;&#x5728;&#x7B49;&#x5F85;&#x53E6;&#x4E00;&#x4E2A;&#x8BE5;&#x4E8B;&#x52A1;&#x96C6;&#x4E2D;&#x7684;&#x4E8B;&#x52A1;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x7CFB;&#x7EDF;&#x6B7B;&#x9501;</p>
+<h3 id="&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention"><a name="&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention" class="anchor-navigation-ex-anchor" href="#&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x6B7B;&#x9501;&#x9884;&#x9632; deadlock prevention</h3>
+<p>&#x6B7B;&#x9501;&#x9884;&#x9632;&#x534F;&#x8BAE;&#x4FDD;&#x8BC1;&#x7CFB;&#x7EDF;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x6B7B;&#x9501;&#x72B6;&#x6001;&#x3002;&#x4F8B;&#x5982;</p>
+<ul>
+<li>&#x8981;&#x6C42;&#x4E8B;&#x52A1;&#x5728;&#x6267;&#x884C;&#x524D;&#xFF0C;&#x5BF9;&#x6240;&#x6709;&#x6570;&#x636E;&#x9879;&#x4E0A;&#x9501;&#xFF08;&#x9884;&#x58F0;&#x660E;&#xFF09;<ul>
+<li>&#x6709;&#x4E24;&#x4E2A;&#x7F3A;&#x70B9;<ul>
+<li>&#x4E8B;&#x52A1;&#x5F00;&#x59CB;&#x524D;&#x901A;&#x5E38;&#x5F88;&#x96BE;&#x9884;&#x652F;&#x54EA;&#x4E9B;&#x6570;&#x636E;&#x9700;&#x8981;&#x5C01;&#x9501;</li>
+<li>&#x6570;&#x636E;&#x9879;&#x4F7F;&#x7528;&#x7387;&#x4F4E;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x8BB8;&#x591A;&#x6570;&#x636E;&#x9879;&#x957F;&#x65F6;&#x95F4;&#x5C01;&#x9501;&#x5374;&#x7528;&#x4E0D;&#x5230;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x901A;&#x8FC7;&#x5BF9;&#x52A0;&#x9501;&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x504F;&#x5E8F;</li>
+<li>&#x6BCF;&#x5F53;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6B7B;&#x9501;&#x65F6;&#xFF0C;&#x8FDB;&#x884C;&#x4E8B;&#x52A1;&#x56DE;&#x6EDA;&#x800C;&#x4E0D;&#x662F;&#x7B49;&#x5F85;&#x52A0;&#x9501;</li>
+</ul>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CH15 并发控制","level":"2.1","depth":1,"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.xinwuyun.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"xinwuyun.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"xinwuyun.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"xinwuyun.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"UA-140787039-2"},"xinwuyun.gitbook.io":{"token":"UA-140787039-1"},"xinwuyun.github.io":{"token":"UA-140787039-2"},"xinwuyun.gitee.io":{"token":"UA-140787039-3"},"xinwuyun.gitlab.io":{"token":"UA-140787039-4"},"xinwuyun.tech":{"token":"UA-140787039-5"},"blog.xinwuyun.cn":{"token":"UA-140787039-6"}},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master","xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master","xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"database/CH15.md","mtime":"2022-03-07T02:42:44.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T03:16:12.990Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-google-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

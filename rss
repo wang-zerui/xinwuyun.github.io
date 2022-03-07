@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[xinwuyun]]></title>
+        <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
+        <link>https://xinwuyun.github.io/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 07 Mar 2022 03:16:16 GMT</lastBuildDate>
+        <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[xinwuyun]]></author>
+        <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
+        <webMaster><![CDATA[zrwangxdu@outlook.com]]></webMaster>
+        <category><![CDATA[markdown]]></category>
+        <category><![CDATA[git]]></category>
+        <category><![CDATA[github]]></category>
+        <category><![CDATA[gitbook]]></category>
+        <category><![CDATA[java]]></category>
+        <category><![CDATA[php]]></category>
+        <item>
+            <title><![CDATA[xinwuyun的笔记]]></title>
+            <link>https://xinwuyun.github.io/</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[数据库第十五章]]></title>
+            <description><![CDATA[image-20220306185053559]]></description>
+            <link>https://xinwuyun.github.io/database/CH15.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/CH15.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[简洁优雅的排版语言,简化版的 HTML,加强版的 TXT,详情请参考 https://xinwuyun.github.io/markdown/]]></description>
+            <link>https://xinwuyun.github.io/GLOSSARY.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/GLOSSARY.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+    </channel>
+</rss>
