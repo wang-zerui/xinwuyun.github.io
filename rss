@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 07 Mar 2022 13:49:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Mar 2022 13:54:04 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -19,6 +19,12 @@
             <title><![CDATA[xinwuyun的笔记]]></title>
             <link>https://xinwuyun.github.io/</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[数据库笔记]]></title>
+            <link>https://xinwuyun.github.io/database/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/about.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
@@ -89,6 +95,12 @@
             <description><![CDATA[由于内部错误事务无法完成]]></description>
             <link>https://xinwuyun.github.io/database/CH16.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/database/CH16.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/computer-network/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/about.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
