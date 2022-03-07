@@ -19,3 +19,8 @@
 + [CH13](database/ch13.md)
 + [CH14](database/ch14.md)
 + [CH15 并发控制](database/CH15.md)
+
+## 搭建说明
+
++ [搭建说明](about/about.md)
+

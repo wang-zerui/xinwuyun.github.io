@@ -9,6 +9,7 @@
     },
     "plugins": [
         "toc",
+        "headscript",
         "-lunr",
         "-search",
         "search-plus",
@@ -30,10 +31,14 @@
         "hide-element",
         "audio_image",
         "mermaid-gb3",
+        "mathjax-pro",
         "baidu-tongji-with-multiple-channel",
         "google-tongji-with-multiple-channel"
     ],
     "pluginsConfig": {
+        "layout": {
+            "scriptPath" : "layouts/script.html"
+        },
         "favicon-absolute": {
             "favicon": "/favicon.ico",
             "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png"
@@ -126,6 +131,11 @@
         },
         "simple-mind-map":{
             "preset": "colorful"
+        },
+        "pluginsConfig": {
+            "mathjax-pro":{
+                "forceSVG": true
+            }
         },
         "baidu-tongji-with-multiple-channel": {
             "url": "https://hm.baidu.com/hm.js",

@@ -21,8 +21,10 @@
     "gitbook-plugin-gitalk": "^1.0.0",
     "gitbook-plugin-github-buttons": "^3.0.0",
     "gitbook-plugin-google-tongji-with-multiple-channel": "^0.1.0",
+    "gitbook-plugin-headscript": "0.0.1",
     "gitbook-plugin-hide-element": "^0.0.4",
     "gitbook-plugin-icp": "^0.1.2",
+    "gitbook-plugin-mathjax": "^2.0.0",
     "gitbook-plugin-mermaid-gb3": "^2.1.0",
     "gitbook-plugin-mygitalk": "^0.2.6",
     "gitbook-plugin-rss": "^3.0.2",
@@ -32,7 +34,8 @@
     "gitbook-plugin-sitemap-general": "^0.1.1",
     "gitbook-plugin-splitter": "^0.0.8",
     "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
-    "gitbook-plugin-toc": "0.0.2"
+    "gitbook-plugin-toc": "0.0.2",
+    "mathjax": "^2.7.9"
   },
   "devDependencies": {},
   "scripts": {

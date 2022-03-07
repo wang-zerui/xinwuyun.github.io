@@ -1,12 +1,12 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-hans" >
+<html lang="zh-hans">
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CH15 并发控制 · xinwuyun</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
+        <title>CH15 &#x5E76;&#x53D1;&#x63A7;&#x5236; &#xB7; xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
         <meta name="generator" content="GitBook 3.2.3">
         <meta name="author" content="xinwuyun">
         
@@ -81,7 +81,7 @@
     
     
     
-    <meta name="HandheldFriendly" content="true"/>
+    <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -89,11 +89,13 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../about/about.html">
     
-    <link rel="prev" href="ch14.html" />
+    
+    <link rel="prev" href="ch14.html">
     
 
-    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml" />
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml">
 
     <style>
     @media only screen and (max-width: 640px) {
@@ -127,7 +129,15 @@
     <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
     
 
-    </head>
+    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        }
+    });
+</script> </head>
     <body>
         
 <div class="book">
@@ -135,7 +145,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
 </div>
 
             
@@ -158,7 +168,7 @@
                 <a href="../">
             
                     
-                    简介
+                    &#x7B80;&#x4ECB;
             
                 </a>
             
@@ -169,7 +179,7 @@
 
     
         
-        <li class="header">数据库笔记</li>
+        <li class="header">&#x6570;&#x636E;&#x5E93;&#x7B14;&#x8BB0;</li>
         
         
     
@@ -245,11 +255,11 @@
                     
                     CH6
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.7" data-path="ch7.md">
             
@@ -258,11 +268,11 @@
                     
                     CH7
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.8" data-path="ch8.html">
             
@@ -284,11 +294,11 @@
                     
                     CH9
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.10" data-path="ch10.md">
             
@@ -297,11 +307,11 @@
                     
                     CH10
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.11" data-path="ch12.md">
             
@@ -310,11 +320,11 @@
                     
                     CH11
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.12" data-path="ch12.md">
             
@@ -323,11 +333,11 @@
                     
                     CH12
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.13" data-path="ch13.md">
             
@@ -336,11 +346,11 @@
                     
                     CH13
             
-                </a>
+                
             
 
             
-        </li>
+        </span></li>
     
         <li class="chapter " data-level="2.14" data-path="ch14.html">
             
@@ -360,7 +370,27 @@
                 <a href="CH15.html">
             
                     
-                    CH15 并发控制
+                    CH15 &#x5E76;&#x53D1;&#x63A7;&#x5236;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x642D;&#x5EFA;&#x8BF4;&#x660E;</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../about/about.html">
+            
+                <a href="../about/about.html">
+            
+                    
+                    &#x642D;&#x5EFA;&#x8BF4;&#x660E;
             
                 </a>
             
@@ -375,7 +405,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本书使用 GitBook 发布
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
         </a>
     </li>
 </ul>
@@ -398,7 +428,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >CH15 并发控制</a>
+        <a href="..">CH15 &#x5E76;&#x53D1;&#x63A7;&#x5236;</a>
     </h1>
 </div>
 
@@ -413,7 +443,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><b>1. </b>&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</a></li><ul><li><span class="title-icon "></span><a href="#lock-based-protocol"><b>1.1. </b>Lock-based protocol</a></li><ul><li><span class="title-icon "></span><a href="#lock"><b>1.1.1. </b>lock</a></li><li><span class="title-icon "></span><a href="#&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility"><b>1.1.2. </b>&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635; lock-compatibility</a></li><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.1.3. </b>&#x4F8B;&#x5B50;</a></li></ul><li><span class="title-icon "></span><a href="#&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks"><b>1.2. </b>&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;Automatic Acquisition of Locks</a></li><ul><li><span class="title-icon "></span><a href="#readd"><b>1.2.1. </b>read(D)</a></li><li><span class="title-icon "></span><a href="#writed"><b>1.2.2. </b>write(D)</a></li></ul><li><span class="title-icon "></span><a href="#the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;"><b>1.3. </b>The two-phase lockign protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#deadlocks"><b>1.4. </b>Deadlocks</a></li><ul><li><span class="title-icon "></span><a href="#&#x9965;&#x997F;"><b>1.4.1. </b>&#x9965;&#x997F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9501;&#x7684;&#x5B9E;&#x73B0;"><b>1.5. </b>&#x9501;&#x7684;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x5904;&#x7406;"><b>1.6. </b>&#x6B7B;&#x9501;&#x5904;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b>1.6.1. </b>&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention"><b>1.6.2. </b>&#x6B7B;&#x9501;&#x9884;&#x9632; deadlock prevention</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x6062;&#x590D;"><b>1.6.3. </b>&#x6B7B;&#x9501;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x6062;&#x590D;</a></li></ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x534F;&#x8BAE;"><b>1.7. </b>&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x534F;&#x8BAE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65F6;&#x95F4;&#x6233;"><b>1.7.1. </b>&#x65F6;&#x95F4;&#x6233;</a></li><li><span class="title-icon "></span><a href="#&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;&#x534F;&#x8BAE;"><b>1.7.2. </b>&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;&#x534F;&#x8BAE;</a></li></ul><li><span class="title-icon "></span><a href="#&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;-multiversion-schemes"><b>1.8. </b>&#x591A;&#x7248;&#x672C;&#x673A;&#x5236; multiversion schemes</a></li></ul></ul></div><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><a name="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><b>1. </b>&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</a></li><ul><li><span class="title-icon "></span><a href="#lock-based-protocol"><b>1.1. </b>Lock-based protocol</a></li><ul><li><span class="title-icon "></span><a href="#lock"><b>1.1.1. </b>lock</a></li><li><span class="title-icon "></span><a href="#&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635;-lock-compatibility"><b>1.1.2. </b>&#x9501;&#x76F8;&#x5BB9;&#x6027;&#x77E9;&#x9635; lock-compatibility</a></li><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.1.3. </b>&#x4F8B;&#x5B50;</a></li></ul><li><span class="title-icon "></span><a href="#&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;automatic-acquisition-of-locks"><b>1.2. </b>&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x9501;Automatic Acquisition of Locks</a></li><ul><li><span class="title-icon "></span><a href="#readd"><b>1.2.1. </b>read(D)</a></li><li><span class="title-icon "></span><a href="#writed"><b>1.2.2. </b>write(D)</a></li></ul><li><span class="title-icon "></span><a href="#the-two-phase-lockign-protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;"><b>1.3. </b>The two-phase lockign protocol&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#deadlocks"><b>1.4. </b>Deadlocks</a></li><ul><li><span class="title-icon "></span><a href="#&#x9965;&#x997F;"><b>1.4.1. </b>&#x9965;&#x997F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9501;&#x7684;&#x5B9E;&#x73B0;"><b>1.5. </b>&#x9501;&#x7684;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x5904;&#x7406;"><b>1.6. </b>&#x6B7B;&#x9501;&#x5904;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b>1.6.1. </b>&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x9884;&#x9632;-deadlock-prevention"><b>1.6.2. </b>&#x6B7B;&#x9501;&#x9884;&#x9632; deadlock prevention</a></li><li><span class="title-icon "></span><a href="#&#x6B7B;&#x9501;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x6062;&#x590D;"><b>1.6.3. </b>&#x6B7B;&#x9501;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x6062;&#x590D;</a></li></ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x534F;&#x8BAE;"><b>1.7. </b>&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x534F;&#x8BAE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65F6;&#x95F4;&#x6233;"><b>1.7.1. </b>&#x65F6;&#x95F4;&#x6233;</a></li><li><span class="title-icon "></span><a href="#&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;&#x534F;&#x8BAE;"><b>1.7.2. </b>&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;&#x534F;&#x8BAE;</a></li></ul><li><span class="title-icon "></span><a href="#&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;-multiversion-schemes"><b>1.8. </b>&#x591A;&#x7248;&#x672C;&#x673A;&#x5236; multiversion schemes</a></li><ul><li><span class="title-icon "></span><a href="#&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;"><b>1.8.1. </b>&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x4E24;&#x9636;&#x6BB5;&#x9501;"><b>1.8.2. </b>&#x4E24;&#x9636;&#x6BB5;&#x9501;</a></li></ul></ul></ul></div><a href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><a name="&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6570;&#x636E;&#x5E93;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;</h1>
 <p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/e761876d62c542d1149ed51728c3c5b1-e761876d62c542d1149ed51728c3c5b1-image-20220306185053559-664953-20220307103922453-31db42.png" alt="image-20220306185053559"></p>
 <h2 id="lock-based-protocol"><a name="lock-based-protocol" class="anchor-navigation-ex-anchor" href="#lock-based-protocol"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Lock-based protocol</h2>
 <h3 id="lock"><a name="lock" class="anchor-navigation-ex-anchor" href="#lock"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. lock</h3>
@@ -486,7 +516,7 @@
 <h3 id="&#x9965;&#x997F;"><a name="&#x9965;&#x997F;" class="anchor-navigation-ex-anchor" href="#&#x9965;&#x997F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x9965;&#x997F;</h3>
 <p>&#x4F8B;&#x5982;&#xFF1A;&#x67D0;&#x4E8B;&#x52A1;&#x53EF;&#x80FD;&#x5728;&#x7B49;&#x5F85;&#x67D0;X-lock&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x4E0D;&#x65AD;&#x88AB;&#x6388;&#x4E88;S-lock&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x52A1;&#x4E00;&#x76F4;&#x5F97;&#x4E0D;&#x5230;X-lock</p>
 <p>&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x7BA1;&#x7406;&#x5668;&#x53EF;&#x4EE5;designed to prevent starvation</p>
-<h3 id=""> </h3>
+<h3 id> </h3>
 <ul>
 <li>&#x5927;&#x591A;&#x6570;&#x5C01;&#x9501;&#x534F;&#x8BAE;&#x4E2D;&#x5B58;&#x5728;&#x6F5C;&#x5728;&#x6B7B;&#x9501;</li>
 <li>&#x5F53;&#x4E00;&#x4E2A;&#x6B7B;&#x9501;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x7EA7;&#x8054;&#x56DE;&#x6EDA;</li>
@@ -602,7 +632,24 @@
 <h4 id="thomas&#x5199;&#x89C4;&#x5219;"><a name="thomas&#x5199;&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#thomas&#x5199;&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>Thomas&#x5199;&#x89C4;&#x5219;</h4>
 <p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/dfc20f82dc5b072757ee6b7a77a74fec-image-20220307165542984-502248.png" alt="image-20220307165542984"></p>
 <h2 id="&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;-multiversion-schemes"><a name="&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;-multiversion-schemes" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;-multiversion-schemes"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x591A;&#x7248;&#x672C;&#x673A;&#x5236; multiversion schemes</h2>
-<p>&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;&#x4FDD;&#x7559;&#x8001;&#x7248;&#x672C;</p>
+<h3 id="&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;"><a name="&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.1. &#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;</h3>
+<p>&#x591A;&#x7248;&#x672C;&#x673A;&#x5236;&#x4FDD;&#x7559;&#x8001;&#x7248;&#x672C;&#x7684;&#x6570;&#x636E;&#x9879;&#x6765;&#x63D0;&#x9AD8;&#x5E76;&#x53D1;&#x6027;</p>
+<ul>
+<li>&#x591A;&#x7248;&#x672C;&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;</li>
+<li>&#x591A;&#x7248;&#x672C;&#x4E24;&#x9636;&#x6BB5;&#x9501;&#x534F;&#x8BAE;</li>
+</ul>
+<p>&#x6BCF;&#x4E2A;&#x6210;&#x529F;&#x7684;write&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x9879;&#x7684;&#x65B0;&#x7248;&#x672C;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/38310e0f2d66b8a2748df76af55efb36-image-20220307172033363-48f682.png" alt="image-20220307172033363"></p>
+<p>&#x4F7F;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x6765;&#x6807;&#x8BB0;&#x7248;&#x672C;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/115da666401834c3f640b428ec14dc3d-image-20220307173719477-209981.png" alt="image-20220307173719477"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/07/19e72f4dc4b3ba41aeaca6218c97e329-image-20220307173728196-bf2a57.png" alt="image-20220307173728196"></p>
+<p>&#x4E0D;&#x4FDD;&#x8BC1;&#x65E0;&#x7EA7;&#x8054;&#x6027;&#x548C;&#x53EF;&#x6062;&#x590D;&#x6027;</p>
+<h3 id="&#x4E24;&#x9636;&#x6BB5;&#x9501;"><a name="&#x4E24;&#x9636;&#x6BB5;&#x9501;" class="anchor-navigation-ex-anchor" href="#&#x4E24;&#x9636;&#x6BB5;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.2. &#x4E24;&#x9636;&#x6BB5;&#x9501;</h3>
+<p>&#x5BF9;<strong>&#x53EA;&#x8BFB;&#x4E8B;&#x52A1;</strong>&#x548C;<strong>&#x66F4;&#x65B0;&#x4E8B;&#x52A1;</strong>&#x52A0;&#x4EE5;&#x533A;&#x5206;</p>
+<ul>
+<li>&#x66F4;&#x65B0;&#x4E8B;&#x52A1;&#x6267;&#x884C;&#x5F3A;&#x4E24;&#x6BB5;&#x9501;&#x534F;&#x8BAE;&#xFF0C;&#x5373;&#x6301;&#x6709;&#x4ED6;&#x4EEC;&#x76F4;&#x5230;&#x4E8B;&#x52A1;&#x7ED3;&#x675F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x63D0;&#x4EA4;&#x7684;&#x6B21;&#x5E8F;&#x4E32;&#x884C;&#x5316;&#x3002;&#x6570;&#x636E;&#x9879;&#x7684;&#x6BCF;&#x4E2A;&#x7248;&#x672C;&#x6709;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x6233;&#xFF08;ts-counter&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BA1;&#x6570;&#x5668;&#x5728;&#x63D0;&#x4EA4;&#x5904;&#x7406;&#x65F6;&#x589E;&#x52A0;&#x8BA1;&#x6570;&#x3002;</li>
+<li>&#x53EA;&#x8BFB;&#x4E8B;&#x52A1;&#xFF0C;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x8BFB;&#x53D6;ts-counter&#x7684;&#x5F53;&#x524D;&#x503C;&#x6765;&#x4F5C;&#x4E3A;&#x8BE5;&#x4E8B;&#x52A1;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;&#x53EA;&#x8BFB;&#x4E8B;&#x52A1;&#x6267;&#x884C;&#x65F6;&#x6309;&#x7167;<strong>&#x591A;&#x7248;&#x672C;&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;&#x534F;&#x8BAE;</strong>&#x3002;&#x56E0;&#x6B64;Ti&#x53D1;&#x51FA;read&#xFF08;Q)&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5C0F;&#x4E8E;TS(Ti)&#x7684;&#x6700;&#x5927;&#x65F6;&#x95F4;&#x6233;&#x7248;&#x672C;&#x7684;&#x5185;&#x5BB9;&#x3002;</li>
+</ul>
 <script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
                                 
                                 </section>
@@ -611,13 +658,13 @@
     <div class="search-results">
         <div class="has-results">
             
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
             <ul class="search-results-list"></ul>
             
         </div>
         <div class="no-results">
             
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
             
         </div>
     </div>
@@ -630,10 +677,14 @@
 
             
                 
-                <a href="ch14.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CH14">
+                <a href="ch14.html" class="navigation navigation-prev " aria-label="Previous page: CH14">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../about/about.html" class="navigation navigation-next " aria-label="Next page: &#x642D;&#x5EFA;&#x8BF4;&#x660E;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -642,7 +693,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CH15 并发控制","level":"2.15","depth":1,"previous":{"title":"CH14","level":"2.14","depth":1,"path":"database/ch14.md","ref":"database/ch14.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.xinwuyun.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"xinwuyun.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"xinwuyun.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"xinwuyun.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"UA-140787039-2"},"xinwuyun.gitbook.io":{"token":"UA-140787039-1"},"xinwuyun.github.io":{"token":"UA-140787039-2"},"xinwuyun.gitee.io":{"token":"UA-140787039-3"},"xinwuyun.gitlab.io":{"token":"UA-140787039-4"},"xinwuyun.tech":{"token":"UA-140787039-5"},"blog.xinwuyun.cn":{"token":"UA-140787039-6"}},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master","xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master","xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"database/CH15.md","mtime":"2022-03-07T08:58:00.913Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T09:17:27.875Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CH15 并发控制","level":"2.15","depth":1,"next":{"title":"搭建说明","level":"3.1","depth":1,"path":"about/about.md","ref":"about/about.md","articles":[]},"previous":{"title":"CH14","level":"2.14","depth":1,"path":"database/ch14.md","ref":"database/ch14.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","headscript","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","mathjax-pro","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pluginsConfig":{"mathjax-pro":{"forceSVG":true}},"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.xinwuyun.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"xinwuyun.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"xinwuyun.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"xinwuyun.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"xinwuyun.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{"localhost":{"token":"UA-140787039-2"},"xinwuyun.gitbook.io":{"token":"UA-140787039-1"},"xinwuyun.github.io":{"token":"UA-140787039-2"},"xinwuyun.gitee.io":{"token":"UA-140787039-3"},"xinwuyun.gitlab.io":{"token":"UA-140787039-4"},"xinwuyun.tech":{"token":"UA-140787039-5"},"blog.xinwuyun.cn":{"token":"UA-140787039-6"}},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"layout":{"scriptPath":"layouts/script.html"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master","xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master","xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master"},"headscript":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"database/CH15.md","mtime":"2022-03-07T11:10:12.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T12:11:22.235Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -698,6 +749,14 @@
     
         
         <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
         
     
         
