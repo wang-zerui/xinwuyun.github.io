@@ -57,11 +57,11 @@ $$
 
 ### 与码的关系 key
 
-当$K\rarr R$时，$K$是**超码**。
+当$K\rightarrow R$时，$K$是**超码**。
 
-当$K\rarr R$，并且不存在$\alpha \subset K, \alpha \rightarrow R$
+当$K\rightarrow R$，并且不存在$\alpha \subset K, \alpha \rightarrow R$
 
-> 不存在K的子集，使得函数依赖$\alpha \rarr R$成立
+> 不存在K的子集，使得函数依赖$\alpha \rightarrow R$成立
 
 + Function Dependencies允许我们表达不能使用超码表达的约束
 
@@ -71,7 +71,7 @@ $$
 
   使用函数依赖表示
 
-  $dept\_name\rarr building \text{   } and \text{ } ID\rarr building$
+  $dept\_name\rightarrow building \text{   } and \text{ } ID\rightarrow building$
 
 ###  we use funcional dependencies to
 
@@ -85,17 +85,17 @@ $$
 
 如果一个函数依赖在一个关系的所有实例上都成立，则它是平凡的
 $$
-ID, name \rarr ID
+ID, name \rightarrow ID
 \\
-name \rarr name
+name \rightarrow name
 $$
 ![image-20220302142334785](/Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/笔记/大三上/数据库笔记/复习/CH8.assets/image-20220302142334785.png)
 
 ## 函数依赖集闭包 closure of a set of functional dependencies
 
 + 给定函数依赖集F，可以推断出一些其他的函数依赖也成立
-  + 例如 $if \; A \rarr B \; and \; B \rarr C$
-  + 可以推出$A \rarr C$
+  + 例如 $if \; A \rightarrow B \; and \; B \rightarrow C$
+  + 可以推出$A \rightarrow C$
 + 能够从给定函数依赖集F推导出的所有函数依赖是F的**闭包（closure）**
 + 写作$F^+$
 + $F^+$是F的超集
@@ -103,7 +103,7 @@ $$
 ## BCNF范式
 
 + 消除所有基于函数依赖能够发现的**冗余**
-+ 具有函数依赖集F的关系模式R属于BCNF的条件是，对$F^+$中所有函数依赖$\alpha \rarr \beta$，下列至少一项成立
++ 具有函数依赖集F的关系模式R属于BCNF的条件是，对$F^+$中所有函数依赖$\alpha \rightarrow \beta$，下列至少一项成立
   + 是平凡的函数依赖
   + 或者$\alpha$是超码
 
@@ -130,7 +130,7 @@ decompose it into
 
 BCNF基础上再加一个条件
 
-+ $\alpha \rarr \beta$是一个平凡trivial的函数依赖
++ $\alpha \rightarrow \beta$是一个平凡trivial的函数依赖
 + $\alpha$是R的一个超码
 + $\beta - \alpha$中的每个属性都包含于R的一个候选码中
 
@@ -150,16 +150,16 @@ BCNF基础上再加一个条件
 
 + 函数依赖集F的闭包是$F^+$
 + 我们可以通过反复使用
-  + **reflexivity自反律**if $\beta \subseteq\alpha$则$\alpha \rarr \beta $
-  + **augmentation增广律：**如果$\alpha \rarr \beta$，则$\gamma \alpha\rarr\gamma\beta$
-  + **transitivity传递律：**如果$\alpha \rarr \beta$并且$\beta\rarr\gamma$则$\alpha\rarr\gamma$
-  + **union合并律**：如果$\alpha \rarr \beta$并且$\alpha \rarr \gamma$，则$\alpha \rarr \beta \gamma$
+  + **reflexivity自反律**if $\beta \subseteq\alpha$则$\alpha \rightarrow \beta $
+  + **augmentation增广律：**如果$\alpha \rightarrow \beta$，则$\gamma \alpha\rightarrow\gamma\beta$
+  + **transitivity传递律：**如果$\alpha \rightarrow \beta$并且$\beta\rightarrow\gamma$则$\alpha\rightarrow\gamma$
+  + **union合并律**：如果$\alpha \rightarrow \beta$并且$\alpha \rightarrow \gamma$，则$\alpha \rightarrow \beta \gamma$
   + **decomposition分解率**：union逆命题
-  + **pseudotransitivity伪传递律：**如果$\alpha \rarr \beta$并且$\gamma \beta \rarr \delta$则$\alpha \gamma \rarr \delta$
+  + **pseudotransitivity伪传递律：**如果$\alpha \rightarrow \beta$并且$\gamma \beta \rightarrow \delta$则$\alpha \gamma \rightarrow \delta$
 
 ## 属性集的闭包
 
-如果$\alpha \rarr B$，我们称属性B被$\alpha$**函数确定（functionally determine)**。
+如果$\alpha \rightarrow B$，我们称属性B被$\alpha$**函数确定（functionally determine)**。
 
 要判断集合$\alpha$是否是超码，需要设计一个算法，用于计算被$\alpha$函数确定的属性集。
 
@@ -174,14 +174,14 @@ BCNF基础上再加一个条件
 
 1. 判断超码：先求$\alpha^+$，看看是否包含R的所有属性
 2. 判断函数依赖是否holds
-   1. 对于$\alpha \rarr \beta$，check $\alpha^+$中是否有$\beta$即可
-3. 另一种计算$F^+$的方法，**对任意$\gamma \subseteq R$找出$\gamma^+$，对任意$S\subseteq \gamma^+$，可以输出一个函数依赖$\gamma \rarr S$**
+   1. 对于$\alpha \rightarrow \beta$，check $\alpha^+$中是否有$\beta$即可
+3. 另一种计算$F^+$的方法，**对任意$\gamma \subseteq R$找出$\gamma^+$，对任意$S\subseteq \gamma^+$，可以输出一个函数依赖$\gamma \rightarrow S$**
 
 ## 正则覆盖 canonical cover
 
 ### 无关属性 extraneous attributes
 
-+ 考虑$\alpha \rarr \beta$ in F
++ 考虑$\alpha \rightarrow \beta$ in F
   + 如果$A \in \alpha$，并且F**逻辑蕴含**$(F-\{\alpha \rightarrow \beta\}) \cup\{(\alpha-A) \rightarrow \beta\}$
   + 如果$A\in\beta$，并且**F逻辑蕴含$(F-\{\alpha \rightarrow \beta\}) \cup\{\alpha \rightarrow (\beta-A)\}$**
   + 则A是无关的
@@ -190,7 +190,7 @@ BCNF基础上再加一个条件
 
 ### 判断一个属性是否无关extraneous（使用属性集闭包）
 
-对于F中的$\alpha\rarr\beta$是否存在无关属性
+对于F中的$\alpha\rightarrow\beta$是否存在无关属性
 
 + $A\in\alpha$
   + 计算$({\alpha}-A)^+$，使用***F***
@@ -238,9 +238,9 @@ $$
 
 如果以下函数任意一个属于$F^+$，则是无损分解
 $$
-R_1 \cap R_2 \rarr R_1
+R_1 \cap R_2 \rightarrow R_1
 \\
-R_1 \cap R_2 \rarr R_2
+R_1 \cap R_2 \rightarrow R_2
 $$
 
 > 也就是分解后一方含有另一方的超码

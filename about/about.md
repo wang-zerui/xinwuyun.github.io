@@ -14,7 +14,7 @@ https://snowdreams1006.github.io/
 
 https://www.piginzoo.com/tech/2021/10/15/gitbook#%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6
 
-### 行内代码无法使用`$\rarr$`
+### 行内代码无法使用`$\rightarrow$`
 
 https://github.com/yunsean/gitbook-mathjax-url
 

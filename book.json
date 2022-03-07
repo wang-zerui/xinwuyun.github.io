@@ -82,11 +82,9 @@
         },
         "edit-link-plus": {
             "base": {
-              "xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/master",
-              "xinwuyun.gitlab.io":"https://gitlab.com/xinwuyun/xinwuyun.gitlab.io/edit/master",
-              "xinwuyun.gitee.io":"https://gitee.com/xinwuyun/xinwuyun/edit/master"
+              "xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"
             },
-            "defaultBase": "https://github.com/xinwuyun/xinwuyun.github.io/edit/master",
+            "defaultBase": "https://github.com/xinwuyun/xinwuyun.github.io/edit/main",
             "label": "编辑本页"
         },
         "chart": {
