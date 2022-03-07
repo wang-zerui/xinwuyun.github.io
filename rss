@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 07 Mar 2022 12:33:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Mar 2022 13:49:23 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -57,6 +57,13 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[CH7 ER图]]></title>
+            <description><![CDATA[[toc]]]></description>
+            <link>https://xinwuyun.github.io/database/ch7.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch7.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[函数依赖理论]]></title>
             <description><![CDATA[image-20220228225942821]]></description>
             <link>https://xinwuyun.github.io/database/ch8.html</link>
@@ -75,6 +82,133 @@
             <description><![CDATA[image-20220306185053559]]></description>
             <link>https://xinwuyun.github.io/database/CH15.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/database/CH15.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH16 恢复系统]]></title>
+            <description><![CDATA[由于内部错误事务无法完成]]></description>
+            <link>https://xinwuyun.github.io/database/CH16.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/CH16.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[总线拓扑结构是多点连接，由一条较长的线缆作为主干来连接网络上的所有设备]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH1.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH1.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH13 以太网]]></title>
+            <description><![CDATA[一种传输速率为10Mbps的常采用局域网（LAN）标准。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH13.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH13.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH14 无线局域网WLAN]]></title>
+            <description><![CDATA[80971692_p0]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH15 连接局域网、主干网和虚拟局域网]]></title>
+            <description><![CDATA[image-20211224100739026]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第四部分网络层]]></title>
+            <description><![CDATA[负责计算机间传输分组]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第二章网络模型]]></title>
+            <description><![CDATA[ISO是组织，OSI是模型]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH2.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH2.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH20IP协议]]></title>
+            <description><![CDATA[网络的物理层和数据链路层在本地运行。这两层共同负责网络相邻节点间的数据传递。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH20IP协议.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH20IP协议.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH21]]></title>
+            <description><![CDATA[#風景 更にちょうふげりおんQ - のうぜん的插画]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH21.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH21.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[CH22 传递、转发和路由选择]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH23]]></title>
+            <description><![CDATA[传输层负责整个报文的进程到进程的传递。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH23.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH23.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3数据与信号]]></title>
+            <description><![CDATA[物理层——通过传输介质以电磁信号的形式传输数据]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH3数据与信号.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH3数据与信号.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[ch10检错与纠错]]></title>
+            <description><![CDATA[| en                                             | ZH_CN          |
+| ---------------------------------------------- | -------------- |
+| Types of errors                                | 差错类型       |
+| Redundancy                                     | 冗余           |
+| Dectection Versus Correction                   | 检错和纠错     |
+| Forward Error Correction Versus Retransmission | 前向纠错和重传 |
+| Coding                                         | 编码           |
+| Modular Arithmetic                             | 模运算         |]]></description>
+            <link>https://xinwuyun.github.io/computer-network/ch10检错与纠错.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/ch10检错与纠错.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[3数据链路控制]]></title>
+            <description><![CDATA[将一组比特位组成帧，一遍帧和帧之间可以识别。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/ch11数据链路控制.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/ch11数据链路控制.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[《计算机通信与网络》课程总复习知识点]]></title>
+            <description><![CDATA[suzumiya1]]></description>
+            <link>https://xinwuyun.github.io/computer-network/总复习.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/总复习.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[第一部分 概述
+第1章 绪论]]></description>
+            <link>https://xinwuyun.github.io/computer-network/总复习2.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/总复习2.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[报文、报文段等的区别]]></title>
+            <description><![CDATA[应用层的信息分组，是网络中交换与传输的数据单元，也是网络传输的单元。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/报文、报文段等的区别.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/报文、报文段等的区别.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
