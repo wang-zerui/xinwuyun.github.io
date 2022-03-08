@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 08 Mar 2022 11:28:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Mar 2022 13:39:27 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -98,7 +98,8 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[《计算机通信与网络》课程总复习知识点]]></title>
+            <description><![CDATA[suzumiya1]]></description>
             <link>https://xinwuyun.github.io/computer-network/about.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/about.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
@@ -213,14 +214,6 @@
             <description><![CDATA[suzumiya1]]></description>
             <link>https://xinwuyun.github.io/computer-network/总复习.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/总复习.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[第一部分 概述
-第1章 绪论]]></description>
-            <link>https://xinwuyun.github.io/computer-network/总复习2.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/总复习2.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
