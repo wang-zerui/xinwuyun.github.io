@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 08 Mar 2022 01:14:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Mar 2022 05:59:23 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -111,66 +111,10 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[CH13 以太网]]></title>
-            <description><![CDATA[一种传输速率为10Mbps的常采用局域网（LAN）标准。]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH13.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH13.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[CH14 无线局域网WLAN]]></title>
-            <description><![CDATA[80971692_p0]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[CH15 连接局域网、主干网和虚拟局域网]]></title>
-            <description><![CDATA[image-20211224100739026]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[第四部分网络层]]></title>
-            <description><![CDATA[负责计算机间传输分组]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
             <title><![CDATA[第二章网络模型]]></title>
             <description><![CDATA[ISO是组织，OSI是模型]]></description>
             <link>https://xinwuyun.github.io/computer-network/CH2.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH2.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[CH20IP协议]]></title>
-            <description><![CDATA[网络的物理层和数据链路层在本地运行。这两层共同负责网络相邻节点间的数据传递。]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH20IP协议.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH20IP协议.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[CH21]]></title>
-            <description><![CDATA[#風景 更にちょうふげりおんQ - のうぜん的插画]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH21.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH21.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[CH22 传递、转发和路由选择]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[CH23]]></title>
-            <description><![CDATA[传输层负责整个报文的进程到进程的传递。]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH23.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH23.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
@@ -199,6 +143,55 @@
             <description><![CDATA[将一组比特位组成帧，一遍帧和帧之间可以识别。]]></description>
             <link>https://xinwuyun.github.io/computer-network/ch11数据链路控制.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/ch11数据链路控制.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH14 无线局域网WLAN]]></title>
+            <description><![CDATA[80971692_p0]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH15 连接局域网、主干网和虚拟局域网]]></title>
+            <description><![CDATA[image-20211224100739026]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第四部分网络层]]></title>
+            <description><![CDATA[负责计算机间传输分组]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH19逻辑寻址.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH20IP协议]]></title>
+            <description><![CDATA[网络的物理层和数据链路层在本地运行。这两层共同负责网络相邻节点间的数据传递。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH20IP协议.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH20IP协议.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH21]]></title>
+            <description><![CDATA[#風景 更にちょうふげりおんQ - のうぜん的插画]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH21.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH21.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[CH22 传递、转发和路由选择]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH22 传递、转发和路由选择.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH23]]></title>
+            <description><![CDATA[传输层负责整个报文的进程到进程的传递。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH23.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH23.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
