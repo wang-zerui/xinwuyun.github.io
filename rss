@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 08 Mar 2022 13:39:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Mar 2022 15:46:10 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -207,6 +207,20 @@
             <description><![CDATA[image-20220308161443896]]></description>
             <link>https://xinwuyun.github.io/computer-network/CH25.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH25.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH26]]></title>
+            <description><![CDATA[Terminal Network]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH26.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH26.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH27]]></title>
+            <description><![CDATA[image-20220308225318815]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH27.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH27.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
