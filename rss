@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 10 Mar 2022 01:38:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Mar 2022 12:35:05 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -123,6 +123,27 @@
             <description><![CDATA[[toc]]]></description>
             <link>https://xinwuyun.github.io/computer-network/CH3数据与信号.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH3数据与信号.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH4 数字传输]]></title>
+            <description><![CDATA[将数字数据转换为数字信号。]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH4 数字传输.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH4 数字传输.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH5]]></title>
+            <description><![CDATA[digital-to-analog conversion]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH5.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH5.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[第6章 带宽利用]]></title>
+            <description><![CDATA[可获得效率]]></description>
+            <link>https://xinwuyun.github.io/computer-network/CH6.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH6.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>

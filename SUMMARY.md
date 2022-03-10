@@ -42,6 +42,9 @@
   + [CH1](computer-network/CH1.md)
   + [CH2](computer-network/CH2.md)
   + [CH3数据与信号](computer-network/CH3数据与信号.md)
+  + [CH4数字传输](computer-network/CH4 数字传输.md)
+  + [CH5 模拟传输](computer-network/CH5.md)
+  + [CH6](computer-network/CH6.md)
   + [ch10检错与纠错](computer-network/ch10检错与纠错.md)
   + [ch11数据链路控制](computer-network/ch11数据链路控制.md)
   + [CH14 无线局域网WLAN](computer-network/CH14 无线局域网WLAN.md)
@@ -55,7 +58,6 @@
     + [CH25](computer-network/CH25.md)
     + [CH26](computer-network/CH26.md)
     + [CH27](computer-network/CH27.md)
-  
   + [总复习](computer-network/总复习.md)
   + [总复习2](computer-network/总复习2.md)
   + [报文、报文段等的区别](computer-network/报文、报文段等的区别.md)
