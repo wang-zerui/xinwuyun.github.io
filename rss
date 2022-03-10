@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 09 Mar 2022 15:46:10 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Mar 2022 01:37:17 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -119,8 +119,8 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[CH3数据与信号]]></title>
-            <description><![CDATA[物理层——通过传输介质以电磁信号的形式传输数据]]></description>
+            <title><![CDATA[CH3 数据和信号]]></title>
+            <description><![CDATA[[toc]]]></description>
             <link>https://xinwuyun.github.io/computer-network/CH3数据与信号.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH3数据与信号.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
