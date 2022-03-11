@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 10 Mar 2022 12:38:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Mar 2022 02:11:03 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -19,6 +19,33 @@
             <title><![CDATA[xinwuyun的笔记]]></title>
             <link>https://xinwuyun.github.io/</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[这里指出你最应当完成的一部分习题之题号（若老师没有明确布置、但你又完成了的话，你可以根据个人意愿请老师帮忙检查，或与老师讨论）]]></description>
+            <link>https://xinwuyun.github.io/compile-prin/复习纲领.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/compile-prin/复习纲领.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH1]]></title>
+            <description><![CDATA[image-20220109130115627]]></description>
+            <link>https://xinwuyun.github.io/compile-prin/CH1.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/compile-prin/CH1.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3]]></title>
+            <link>https://xinwuyun.github.io/compile-prin/CH3笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/compile-prin/CH3笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[填空题]]></description>
+            <link>https://xinwuyun.github.io/compile-prin/填空题.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/compile-prin/填空题.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>

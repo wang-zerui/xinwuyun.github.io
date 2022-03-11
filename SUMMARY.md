@@ -4,8 +4,11 @@
 
 ## 大三上笔记
 
++ [编译原理](compile-prin/复习纲领.md)
+- [CH1](compile-prin/CH1.md)
+  - [CH3](compile-prin/CH3笔记.md)
+- [填空题](compile-prin/填空题.md)
 + [数据库笔记](database/about.md)
-
   + [CH1](database/ch1.md)
 
   + [CH2](database/ch2.md)
@@ -61,7 +64,7 @@
   + [总复习](computer-network/总复习.md)
   + [总复习2](computer-network/总复习2.md)
   + [报文、报文段等的区别](computer-network/报文、报文段等的区别.md)
-  
+
 
 ## 搭建说明
 
