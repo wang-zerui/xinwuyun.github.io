@@ -63,6 +63,7 @@
     + [CH27](computer-network/CH27.md)
   + [总复习](computer-network/总复习.md)
   + [总复习2](computer-network/总复习2.md)
+  + [期末试题](computer-network/计网期末试题.md)
   + [报文、报文段等的区别](computer-network/报文、报文段等的区别.md)
 
 

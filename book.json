@@ -4,9 +4,7 @@
     "description": "xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/",
     "language": "zh-hans",
     "gitbook": "3.2.3",
-    "links": {
-        
-    },
+    "links": {},
     "plugins": [
         "toc",
         "headscript",
@@ -31,13 +29,12 @@
         "hide-element",
         "audio_image",
         "mermaid-gb3",
-        "mathjax-pro",
-        "baidu-tongji-with-multiple-channel",
-        "google-tongji-with-multiple-channel"
+        "mathjax-pro"
     ],
     "pluginsConfig": {
+        
         "layout": {
-            "scriptPath" : "layouts/script.html"
+            "scriptPath": "layouts/script.html"
         },
         "favicon-absolute": {
             "favicon": "/favicon.ico",
@@ -47,14 +44,15 @@
             "addClass": true,
             "className": "toc"
         },
-        
         "github-buttons": {
-            "buttons": [{
-                "user": "xinwuyun",
-                "repo": "xinwuyun.github.io",
-                "type": "star",
-                "size": "small"
-            }]
+            "buttons": [
+                {
+                    "user": "xinwuyun",
+                    "repo": "xinwuyun.github.io",
+                    "type": "star",
+                    "size": "small"
+                }
+            ]
         },
         "sharing": {
             "douban": true,
@@ -75,14 +73,19 @@
             "weibo": true,
             "whatsapp": false,
             "all": [
-                "facebook", "google", "twitter",
-                "weibo", "instapaper", "linkedin",
-                "pocket", "stumbleupon"
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper",
+                "linkedin",
+                "pocket",
+                "stumbleupon"
             ]
         },
         "edit-link-plus": {
             "base": {
-              "xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"
+                "xinwuyun.github.io": "https://github.com/xinwuyun/xinwuyun.github.io/edit/main"
             },
             "defaultBase": "https://github.com/xinwuyun/xinwuyun.github.io/edit/main",
             "label": "编辑本页"
@@ -116,75 +119,27 @@
             "website": "xinwuyun",
             "copyProtect": false
         },
-        "mygitalk": { 
+        "mygitalk": {
             "clientID": "c1986de36a48f4a8fe0e",
             "clientSecret": "7ebea379f5c29ef2def4e1307590f8ef34039d10",
             "repo": "xinwuyun.github.io",
             "owner": "xinwuyun",
-            "admin": ["xinwuyun"],
+            "admin": [
+                "xinwuyun"
+            ],
             "distractionFreeMode": false
         },
         "hide-element": {
-            "elements": ["a.gitbook-link[href='https://www.gitbook.com']"]
+            "elements": [
+                "a.gitbook-link[href='https://www.gitbook.com']"
+            ]
         },
-        "simple-mind-map":{
+        "simple-mind-map": {
             "preset": "colorful"
         },
         "pluginsConfig": {
-            "mathjax-pro":{
+            "mathjax-pro": {
                 "forceSVG": true
-            }
-        },
-        "baidu-tongji-with-multiple-channel": {
-            "url": "https://hm.baidu.com/hm.js",
-            "multipleChannelConfig": {
-                "localhost":{
-                    "token": "5273b2f99de3bc190886abb53f62267e"
-                },
-                "xinwuyun.tech":{
-                    "token": "468a97b20b79bc025d27afbee73d2f39"
-                },
-                "blog.xinwuyun.cn":{
-                    "token": "606f5db455f771889dcfd16bb2bd313b"
-                },
-                "xinwuyun.github.io":{
-                    "token": "5273b2f99de3bc190886abb53f62267e"
-                },
-                "xinwuyun.gitee.io":{
-                    "token": "60ec676f32be4579eb53a430e153f677"
-                },
-                "xinwuyun.gitlab.io":{
-                    "token": "187a0e5601c4e4987cdb5b8df09c9b21"
-                },
-                "xinwuyun.gitbook.io":{
-                    "token": "6e2ee1b7bea146b2d6d9382bbf803083"
-                }
-            }
-        },
-        "google-tongji-with-multiple-channel": {
-            "url": "https://www.googletagmanager.com/gtag/js",
-            "multipleChannelConfig": {
-                "localhost":{
-                    "token": "UA-140787039-2"
-                },
-                "xinwuyun.gitbook.io":{
-                    "token": "UA-140787039-1"
-                },
-                "xinwuyun.github.io":{
-                    "token": "UA-140787039-2"
-                },
-                "xinwuyun.gitee.io":{
-                    "token": "UA-140787039-3"
-                },
-                "xinwuyun.gitlab.io":{
-                    "token": "UA-140787039-4"
-                },
-                "xinwuyun.tech":{
-                    "token": "UA-140787039-5"
-                },
-                "blog.xinwuyun.cn":{
-                    "token": "UA-140787039-6"
-                }
             }
         }
     }
