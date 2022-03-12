@@ -5,7 +5,6 @@
 ## 大三上笔记
 
 + [编译原理](compile-prin/复习纲领.md)
-
   - [CH1](compile-prin/CH1.md)
   - [CH3](compile-prin/CH3笔记.md)
   - [填空题](compile-prin/填空题.md)
@@ -89,8 +88,8 @@
   + [CH6](computer-network/CH6.md)
   + [ch10检错与纠错](computer-network/ch10检错与纠错.md)
   + [ch11数据链路控制](computer-network/ch11数据链路控制.md)
-  + [CH14 无线局域网WLAN](computer-network/CH14 无线局域网WLAN.md)
-  + [CH15 连接局域网、主干网和虚拟局域网](computer-network/CH15 连接局域网、主干网和虚拟局域网.md)
+  + [CH14无线局域网WLAN](computer-network/CH14.md)
+  + [CH15连接局域网、主干网和虚拟局域网](computer-network/CH15.md)
   + [CH19逻辑寻址](computer-network/CH19逻辑寻址.md)
   + [CH20IP协议](computer-network/CH20IP协议.md)
   + [CH21](computer-network/CH21.md)

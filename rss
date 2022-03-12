@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 12 Mar 2022 11:58:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Mar 2022 12:09:56 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -329,15 +329,15 @@
         <item>
             <title><![CDATA[CH14 无线局域网WLAN]]></title>
             <description><![CDATA[80971692_p0]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH14 无线局域网WLAN.html</guid>
+            <link>https://xinwuyun.github.io/computer-network/CH14.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH14.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
             <title><![CDATA[CH15 连接局域网、主干网和虚拟局域网]]></title>
             <description><![CDATA[image-20211224100739026]]></description>
-            <link>https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH15 连接局域网、主干网和虚拟局域网.html</guid>
+            <link>https://xinwuyun.github.io/computer-network/CH15.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH15.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
