@@ -9,7 +9,7 @@
   - [CH1](compile-prin/CH1.md)
   - [CH3](compile-prin/CH3笔记.md)
   - [填空题](compile-prin/填空题.md)
-  - [marscat笔记](compile-prin/marscat笔记/编译原理笔记1：概述编译相关的基本知识.md)
+  - [marscat笔记](compile-prin/marscat笔记/about.md)
     + [编译原理笔记1：概述编译相关的基本知识](compile-prin/marscat笔记/编译原理笔记1：概述编译相关的基本知识.md)
     
     + [编译原理笔记2：词法分析基础与模式的形式化描述](compile-prin/marscat笔记/编译原理笔记2：词法分析基础与模式的形式化描述.md)
