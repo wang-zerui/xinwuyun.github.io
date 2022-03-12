@@ -5,9 +5,10 @@
 ## 大三上笔记
 
 + [编译原理](compile-prin/复习纲领.md)
-- [CH1](compile-prin/CH1.md)
+
+  - [CH1](compile-prin/CH1.md)
   - [CH3](compile-prin/CH3笔记.md)
-- [填空题](compile-prin/填空题.md)
+  - [填空题](compile-prin/填空题.md)
 + [数据库笔记](database/about.md)
   + [CH1](database/ch1.md)
 
