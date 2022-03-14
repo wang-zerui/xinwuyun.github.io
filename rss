@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 12 Mar 2022 12:09:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Mar 2022 04:03:01 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -370,7 +370,7 @@
         </item>
         <item>
             <title><![CDATA[CH23]]></title>
-            <description><![CDATA[传输层负责整个报文的进程到进程的传递。]]></description>
+            <description><![CDATA[image-20220314100425032]]></description>
             <link>https://xinwuyun.github.io/computer-network/CH23.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/computer-network/CH23.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
