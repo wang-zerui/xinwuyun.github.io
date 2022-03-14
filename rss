@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 14 Mar 2022 10:48:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Mar 2022 14:59:14 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -202,7 +202,7 @@
         </item>
         <item>
             <title><![CDATA[第三章 SQL]]></title>
-            <description><![CDATA[image-20220224161604197]]></description>
+            <description><![CDATA[[TOC]]]></description>
             <link>https://xinwuyun.github.io/database/ch3.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/database/ch3.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>

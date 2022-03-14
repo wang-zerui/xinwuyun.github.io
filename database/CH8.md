@@ -59,7 +59,7 @@ $$
 
 当$K\rightarrow R$时，$K$是**超码**。
 
-当$K\rightarrow R$，并且不存在$\alpha \subset K, \alpha \rightarrow R$
+当$K\rightarrow R$，并且不存在$\alpha \subset K, \alpha \rightarrow R$，则K是**候选码**
 
 > 不存在K的子集，使得函数依赖$\alpha \rightarrow R$成立
 
@@ -186,14 +186,14 @@ BCNF基础上再加一个条件
   + 如果$A\in\beta$，并且**F逻辑蕴含$(F-\{\alpha \rightarrow \beta\}) \cup\{\alpha \rightarrow (\beta-A)\}$**
   + 则A是无关的
 
-![image-20220303164059801](/Users/chentong/Library/Mobile Documents/com~apple~CloudDocs/笔记/大三上/数据库笔记/复习/CH8.assets/image-20220303164059801.png)
+![image-20220303164059801](https://cdn.jsdelivr.net/gh/xinwuyun/pictures@main/2022/03/14/43b7420de4fad78ae7e0649386c8270a-image-20220303164059801-2add9c.png)
 
 ### 判断一个属性是否无关extraneous（使用属性集闭包）
 
 对于F中的$\alpha\rightarrow\beta$是否存在无关属性
 
 + $A\in\alpha$
-  + 计算$({\alpha}-A)^+$，使用***F***
+  + 计算$({\alpha}-A)^+$，使用F
   + 判断其是否包含$\beta$，有则A是无关属性
 + $A\in \beta$
   + 计算$\alpha^+$，使用$\mathrm{F}^{\prime}=(F-\{\alpha \rightarrow \beta\}) \cup\{\alpha \rightarrow(\beta-A)\}$
@@ -206,7 +206,7 @@ BCNF基础上再加一个条件
 1. F逻辑蕴含Fc
 2. Fc逻辑蕴含F
 3. Fc中的函数依赖不包含无关属性
-4. Fc中的每个函数依赖的左边都是唯一的。
+4. Fc中的每个函数依赖的左边都是唯一的
 
 ### 算法
 
@@ -236,7 +236,7 @@ $$
 
 #### 用函数依赖说明
 
-如果以下函数任意一个属于$F^+$，则是无损分解
+如果以下函数**任意一个**属于$F^+$，则是无损分解
 $$
 R_1 \cap R_2 \rightarrow R_1
 \\

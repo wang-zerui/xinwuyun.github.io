@@ -92,7 +92,7 @@ insert into instructor_info values('1000', 'wzr', 'watson');
 
 如果一个建筑中有多个department，就无法确定这个老师是哪个院的，并且如果该建筑中没有department。
 
-满足如下条件view可以
+**满足如下条件view可以**
 
 + From语句中只涉及一个关系
 + select语句只包含属性名，不包含任何表达式、聚合函数和distinct
