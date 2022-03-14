@@ -67,7 +67,7 @@
 
   + [CH10](database/ch10.md)
 
-  + [CH11](database/ch12.md)
+  + [CH11](database/ch11.md)
 
   + [CH12](database/ch12.md)
 
