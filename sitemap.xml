@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>https://xinwuyun.github.io/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/compile-prin/复习纲领.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://xinwuyun.github.io/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/compile-prin/CH1.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/compile-prin/CH3笔记.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/compile-prin/填空题.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -32,6 +32,7 @@
 <url> <loc>https://xinwuyun.github.io/database/ch5.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/database/ch7.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/database/ch8.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://xinwuyun.github.io/database/ch11.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/database/ch14.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/database/CH15.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://xinwuyun.github.io/database/CH16.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

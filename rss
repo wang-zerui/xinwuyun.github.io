@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 14 Mar 2022 10:43:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Mar 2022 10:48:00 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -16,16 +16,16 @@
         <category><![CDATA[java]]></category>
         <category><![CDATA[php]]></category>
         <item>
-            <title><![CDATA[xinwuyun的笔记]]></title>
-            <link>https://xinwuyun.github.io/</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
-            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
-        </item>
-        <item>
             <title><![CDATA[No title]]></title>
             <description><![CDATA[这里指出你最应当完成的一部分习题之题号（若老师没有明确布置、但你又完成了的话，你可以根据个人意愿请老师帮忙检查，或与老师讨论）]]></description>
             <link>https://xinwuyun.github.io/compile-prin/复习纲领.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/compile-prin/复习纲领.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[xinwuyun的笔记]]></title>
+            <link>https://xinwuyun.github.io/</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
@@ -233,6 +233,13 @@
             <description><![CDATA[image-20220228225942821]]></description>
             <link>https://xinwuyun.github.io/database/ch8.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/database/ch8.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH11]]></title>
+            <description><![CDATA[image-20220303225247660]]></description>
+            <link>https://xinwuyun.github.io/database/ch11.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/database/ch11.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
